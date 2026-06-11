@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "selectOrder": [
+    "major",
+    "semester",
+    "subject"
+  ],
+  "updatedAt": "2026-06-11T15:44:35.174500+00:00",
+  "quizzes": [
+    {
+      "id": "cong-nghe-thong-tin-ki-2-giai-tich-de-mau",
+      "major": "Công nghệ thông tin",
+      "semester": "Kì 2",
+      "subject": "Giải tích",
+      "title": "Đề mẫu GT2",
+      "lessonName": "Đề mẫu",
+      "description": "Đề mẫu giải tích 2",
+      "path": "./Json/CNTT/Ki_2/GT2.json",
+      "questionCount": 40
+    }
+  ]
+}
