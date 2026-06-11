@@ -1,0 +1,1090 @@
+{
+  "title": "Đề mẫu GT2",
+  "lessonName": "Đề mẫu",
+  "description": "Đề mẫu giải tích 2",
+  "major": "Công nghệ thông tin",
+  "semester": "Kì 2",
+  "subject": "Giải tích",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Cho hàm số \\( f(x,y)=\\begin{cases} \\frac{xy\\sin x}{x^2+4y^2} & \\text{nếu } (x,y) \\neq (0,0) \\\\ 0 & \\text{nếu } (x,y)=(0,0) \\end{cases} \\). Đặt \\( L=\\lim_{(x,y)\\to(0,0)}f(x,y) \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "Không tồn tại \\( \\lim_{(x,y)\\to(0,0)}f(x,y) \\)",
+          "correct": false,
+          "explanation": "Sai vì giới hạn này hoàn toàn tồn tại bằng cách sử dụng nguyên lý kẹp."
+        },
+        {
+          "text": "\\( L=\\infty \\)",
+          "correct": false,
+          "explanation": "Sai vì hàm số tiến về một giá trị hữu hạn khi \\( (x,y) \\) dần về \\( (0,0) \\)."
+        },
+        {
+          "text": "\\( L=2 \\)",
+          "correct": false,
+          "explanation": "Sai vì giá trị giới hạn thực tế bằng 0 chứ không bằng 2."
+        },
+        {
+          "text": "\\( L=0 \\)",
+          "correct": true,
+          "explanation": "Đúng vì ta có \\( |f(x,y)| \\le \\frac{|x^2y|}{x^2+4y^2} \\le |x| \\to 0 \\) khi \\( (x,y) \\to (0,0) \\)."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "Cho hàm số \\( u=e^{2x+3y}\\sin 2z \\). Khẳng định nào dưới đây về đạo hàm riêng cấp \\( n \\in \\mathbb{N}^* \\) là đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( u_{x^{n-2}yz}^{(n)}=3\\cdot2^{n-2}e^{2x+3y}\\cos 2z \\)",
+          "correct": false,
+          "explanation": "Sai vì hệ số nhân thu được sau khi đạo hàm không chính xác."
+        },
+        {
+          "text": "\\( u_{x^{n-3}yz^2}^{(n)}=3\\cdot2^{n-1}e^{2x+3y}\\sin 2z \\)",
+          "correct": false,
+          "explanation": "Sai do đạo hàm cấp hai theo biến z sẽ đổi dấu sinh ra dấu âm và hàm chuyển về hình thức gốc."
+        },
+        {
+          "text": "\\( u_{x^{n-1}z}^{(n)}=2^{n}e^{2x+3y}\\cos 2z \\)",
+          "correct": true,
+          "explanation": "Đúng vì đạo hàm \\( n-1 \\) lần theo x đưa ra hệ số \\( 2^{n-1} \\), tiếp tục đạo hàm theo z đưa ra thêm hệ số 2 và chuyển \\( \\sin 2z \\) thành \\( \\cos 2z \\)."
+        },
+        {
+          "text": "\\( u_{x^{n-1}z}^{(n)}=2^{n}e^{2x+3y}\\sin 2z \\)",
+          "correct": false,
+          "explanation": "Sai vì đạo hàm một lần theo biến z phải chuyển hàm sin thành hàm cos."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "Cho \\( I=\\iint_{S}x^3dydz+y^3dzdx+z^3dxdy \\), với S là mặt ngoài của nửa trên mặt cầu bán kính R có phương trình \\( x^2+y^2+z^2=R^2; z\\ge0 \\). Khẳng định nào dưới đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=\\frac{6\\pi}{5}R^5 \\)",
+          "correct": true,
+          "explanation": "Đúng bằng cách áp dụng công thức Gauss-Ostrogradsky cho khối nửa mặt cầu và mặt đáy phẳng có \\( z=0 \\)."
+        },
+        {
+          "text": "\\( I=\\frac{2\\pi}{3}R^5 \\)",
+          "correct": false,
+          "explanation": "Sai do tính sai giá trị tích phân ba lớp của biểu thức \\( 3(x^2+y^2+z^2) \\)."
+        },
+        {
+          "text": "\\( I=\\frac{\\pi}{3}R^5 \\)",
+          "correct": false,
+          "explanation": "Sai vì thiếu hệ số hình học khi chuyển sang tọa độ cầu."
+        },
+        {
+          "text": "\\( I=\\frac{3\\pi}{5}R^5 \\)",
+          "correct": false,
+          "explanation": "Sai do nhầm lẫn hệ số tích phân lớp Gauss."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "Tính \\( \\Phi=\\iint_{S}zdxdy \\), trong đó S là mặt ngoài của mặt cầu có phương trình \\( x^2+y^2+z^2=9 \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( \\Phi=27\\pi \\)",
+          "correct": false,
+          "explanation": "Sai do tính toán nhầm bán kính khối cầu."
+        },
+        {
+          "text": "\\( \\Phi=36\\pi \\)",
+          "correct": true,
+          "explanation": "Đúng vì theo Gauss-Ostrogradsky, tích phân bằng thể tích khối cầu bán kính \\( R=3 \\), tức là \\( \\iiint_V 1 dV = \\frac{4}{3}\\pi \\cdot 3^3 = 36\\pi \\)."
+        },
+        {
+          "text": "\\( \\Phi=33\\pi \\)",
+          "correct": false,
+          "explanation": "Sai vì giá trị này không tương ứng với công thức tính thể tích cầu."
+        },
+        {
+          "text": "\\( \\Phi=81\\pi \\)",
+          "correct": false,
+          "explanation": "Sai vì lũy thừa bán kính bị tính sai."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": "Cho các hàm số \\( f(x,y)=xy \\) và \\( g(x,y)=\\cos(xy) \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( \\frac{\\partial g}{\\partial x}+\\frac{\\partial g}{\\partial y}=-(\\frac{\\partial f}{\\partial x}+\\frac{\\partial f}{\\partial y})\\sin(xy) \\)",
+          "correct": true,
+          "explanation": "Đúng vì \\( \\frac{\\partial g}{\\partial x} = -y\\sin(xy) \\), \\( \\frac{\\partial g}{\\partial y} = -x\\sin(xy) \\), nhóm lại ta được hệ thức trên."
+        },
+        {
+          "text": "\\( \\frac{\\partial g}{\\partial x}+\\frac{\\partial g}{\\partial y}=-(\\frac{\\partial f}{\\partial x}+\\frac{\\partial f}{\\partial y})\\cos(xy) \\)",
+          "correct": false,
+          "explanation": "Sai vì đạo hàm của hàm cos phải sinh ra hàm sin."
+        },
+        {
+          "text": "\\( \\frac{\\partial g}{\\partial x}-\\frac{\\partial g}{\\partial y}=(\\frac{\\partial f}{\\partial x}-\\frac{\\partial f}{\\partial y})\\cos(xy) \\)",
+          "correct": false,
+          "explanation": "Sai cả về dấu lẫn hàm lượng giác sau đạo hàm hợp."
+        },
+        {
+          "text": "\\( \\frac{\\partial g}{\\partial x}-\\frac{\\partial g}{\\partial y}=(\\frac{\\partial f}{\\partial x}-\\frac{\\partial f}{\\partial y})\\sin(xy) \\)",
+          "correct": false,
+          "explanation": "Sai vì dấu của vế phải bị ngược do đạo hàm của cos là trừ sin."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": "Tính tích phân đường loại một \\( I=\\int_{C}(3x+y)ds \\), với C là tam giác với các đỉnh \\( O(0,0); A(1,0); B(0,1) \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=2(\\sqrt{2}+1) \\)",
+          "correct": true,
+          "explanation": "Đúng nhờ việc chia làm 3 đoạn thẳng OA, AB, BO rồi tính tích phân từng đoạn và cộng lại."
+        },
+        {
+          "text": "\\( I=2\\sqrt{2}+1 \\)",
+          "correct": false,
+          "explanation": "Sai do phân tích độ dài vi phân cung \\( ds \\) trên đoạn cạnh huyền không chính xác."
+        },
+        {
+          "text": "\\( I=2\\sqrt{2}-1 \\)",
+          "correct": false,
+          "explanation": "Sai do nhầm lẫn dấu khi cộng giá trị trên các biên."
+        },
+        {
+          "text": "\\( I=\\sqrt{2}+2 \\)",
+          "correct": false,
+          "explanation": "Sai vì phân phối hệ số hằng số của tam giác bị sai lệch."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": "Tính thể tích V của hình giới hạn bởi các mặt có phương trình: \\( x=0, y=0, z=0, x+y=3, x+y-z=0 \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( V=6 \\)",
+          "correct": false,
+          "explanation": "Sai vì tính toán sai tích phân kép của mặt trần \\( z=x+y \\)."
+        },
+        {
+          "text": "\\( V=\\frac{7}{2} \\)",
+          "correct": false,
+          "explanation": "Sai vì giá trị này không tương thích với tích phân trên miền tam giác đáy."
+        },
+        {
+          "text": "\\( V=\\frac{9}{2} \\)",
+          "correct": false,
+          "explanation": "Sai do nhầm lẫn với diện tích của tam giác đáy phẳng."
+        },
+        {
+          "text": "\\( V=9 \\)",
+          "correct": true,
+          "explanation": "Đúng vì \\( V = \\int_{0}^{3}dx\\int_{0}^{3-x}(x+y)dy = 9 \\)."
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": "Chuyển tích phân kép \\( I=\\iint_{D}(x^2-y^2)dxdy \\) với \\( D = \\{(x, y) | 0 \\le x-y \\le 1; 0 \\le x+y \\le 2\\} \\) về tích phân lặp bằng cách đổi biến \\( x+y=u, x-y=v \\). Khẳng định nào dưới đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=\\frac{1}{2}\\int_{0}^{2}du\\int_{0}^{1}(u-v)dv \\)",
+          "correct": false,
+          "explanation": "Sai vì \\( x^2-y^2 = (x-y)(x+y) = uv \\) chứ không phải hiệu \\( u-v \\)."
+        },
+        {
+          "text": "\\( I=\\frac{1}{2}\\int_{0}^{2}du\\int_{0}^{1}uvdv \\)",
+          "correct": true,
+          "explanation": "Đúng vì biểu thức dưới dấu tích phân biến thành \\( uv \\) và định thức Jacobian của phép đổi biến là \\( \\frac{1}{2} \\)."
+        },
+        {
+          "text": "\\( I=2\\int_{0}^{1}du\\int_{0}^{2}(u^2-v^2)dv \\)",
+          "correct": false,
+          "explanation": "Sai do tính sai định thức Jacobian nghịch đảo và sai hàm số biến đổi."
+        },
+        {
+          "text": "\\( I=2\\int_{0}^{1}dv\\int_{0}^{2}(u+v)du \\)",
+          "correct": false,
+          "explanation": "Sai do hệ số Jacobian đảo ngược sai vị trí và sai hàm cốt lõi."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": "Cho hàm số \\( u=x^3+y^3+z^3-3xyz \\) và điểm M sao cho kết quả tính toán véc-tơ và độ dài Grad thỏa mãn điều kiện hình học. Khẳng định nào dưới đây đúng về độ lớn vectơ gradient tại M?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( \\vec{\\text{grad}}u(M)=(6;0;-6) \\)",
+          "correct": false,
+          "explanation": "Sai vì các thành phần đạo hàm riêng tại điểm khảo sát không cho ra bộ số này."
+        },
+        {
+          "text": "\\( \\vec{\\text{grad}}u(M)=(0;2;6) \\)",
+          "correct": false,
+          "explanation": "Sai vì tọa độ của véc tơ gradient bị tính toán lệch hướng."
+        },
+        {
+          "text": "\\( |\\vec{\\text{grad}}u(M)|=6\\sqrt{2} \\)",
+          "correct": true,
+          "explanation": "Đúng vì khi tính mô-đun của véc-tơ các đạo hàm riêng bậc nhất tại điểm M, ta nhận được giá trị tiêu chuẩn \\( 6\\sqrt{2} \\)."
+        },
+        {
+          "text": "\\( \\vec{\\text{grad}}u(M)=(6;2;0) \\)",
+          "correct": false,
+          "explanation": "Sai do nhầm lẫn các giá trị thành phần đạo hàm theo các biến tương ứng."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": "Cho hàm số \\( f(x,y)=\\ln 4(x+y) \\). Khẳng định nào sau đây không đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( f_{xx}''=f_{yy}'' \\)",
+          "correct": false,
+          "explanation": "Khẳng định này đúng vì hàm có tính chất đối xứng hoàn toàn đối với hai biến x và y."
+        },
+        {
+          "text": "\\( f_x'=f_y' \\)",
+          "correct": false,
+          "explanation": "Khẳng định này đúng vì đạo hàm riêng theo x và theo y đều bằng \\( \\frac{1}{x+y} \\)."
+        },
+        {
+          "text": "\\( yf_x'+xf_y'=1 \\)",
+          "correct": false,
+          "explanation": "Khẳng định này đúng tại tập điểm thỏa mãn cấu trúc quan hệ tuyến tính biến."
+        },
+        {
+          "text": "\\( x^2f_{xx}''+y^2f_{yy}''=1 \\)",
+          "correct": true,
+          "explanation": "Đúng vì đây là khẳng định SAI; vế trái khi tính toán biểu thức đạo hàm bậc hai sẽ không ra hằng số 1."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": "Cho hàm \\( f(x,y) \\) khả tích trong miền đóng và bị chặn D. Khẳng định nào sau đây không đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "Nếu D xác định bởi các dải đồ thị liên tục thì có thể đưa về tích phân lặp.",
+          "correct": false,
+          "explanation": "Khẳng định này hoàn toàn đúng theo định lý Fubini về tích phân lặp."
+        },
+        {
+          "text": "\\( \\iint_{D}f(x,y)dxdy\\ge0 \\Rightarrow f(x,y)\\ge0,\\forall(x,y)\\in D \\)",
+          "correct": true,
+          "explanation": "Đúng vì đây là khẳng định SAI; một hàm số có tích phân dương vẫn có thể nhận giá trị âm trên một vài tập con có diện tích nhỏ."
+        },
+        {
+          "text": "\\( \\iint_{D}dxdy=S \\) với S là diện tích của miền D.",
+          "correct": false,
+          "explanation": "Khẳng định này đúng theo ý nghĩa hình học của tích phân kép."
+        },
+        {
+          "text": "Có thể hoán đổi thứ tự tích phân lặp nếu miền D thỏa mãn tính chất hình học đều.",
+          "correct": false,
+          "explanation": "Khẳng định này đúng dựa trên các quy tắc đổi cận liên tục của miền đơn giản."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": "Cho hàm số \\( f(x,y)=\\frac{xy}{\\sqrt{8-x^2-y^2}} \\), gọi \\( D_f \\) là miền xác định của f. Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( D_f=\\{(x,y)\\in\\mathbb{R}^2|x^2+y^2\\ge8\\} \\)",
+          "correct": false,
+          "explanation": "Sai vì nếu biểu thức lớn hơn hoặc bằng 8 thì căn thức sẽ âm hoặc bằng không ở mẫu."
+        },
+        {
+          "text": "\\( D_f=\\{(x,y)\\in\\mathbb{R}^2|x^2+y^2<8\\} \\)",
+          "correct": true,
+          "explanation": "Đúng vì điều kiện để biểu thức dưới mẫu tồn tại và khác không là \\( 8-x^2-y^2 > 0 \\Leftrightarrow x^2+y^2 < 8 \\)."
+        },
+        {
+          "text": "\\( D_f=\\mathbb{R}^2 \\)",
+          "correct": false,
+          "explanation": "Sai vì hàm số bị hạn chế bởi phần căn thức dưới mẫu số."
+        },
+        {
+          "text": "\\( D_f=\\{(x,y)\\in\\mathbb{R}^2|8-x^2-y^2\\ge0\\} \\)",
+          "correct": false,
+          "explanation": "Sai vì dấu bằng xảy ra làm mẫu số bằng 0, hàm không xác định."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "question": "Cho \\( u=u(x,y), v=v(x,y) \\) là các hàm số ẩn xác định từ hệ: \\( \\begin{cases}x^3u^2=y+x \\\\ 2y-u=x-2v^2\\end{cases} \\). Biết rằng \\( u(1,0)=1, v(1,0)=1 \\), tính \\( du(1,0) \\) và \\( dv(1,0) \\). Khẳng định nào dưới đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( du(1,0)=-dx-\\frac{1}{2}dy, dv(1,0)=-\\frac{3}{8}dy \\)",
+          "correct": false,
+          "explanation": "Sai do tính nhầm dấu của thành phần vi phân tự do biến x."
+        },
+        {
+          "text": "\\( du(1,0)=-dx+\\frac{1}{2}dy, dv(1,0)=-\\frac{3}{8}dy \\)",
+          "correct": true,
+          "explanation": "Đúng bằng cách lấy vi phân hai vế của hệ phương trình rồi thay tọa độ điểm \\( (1,0,1,1) \\) vào giải hệ phương trình vi phân."
+        },
+        {
+          "text": "\\( du(1,0)=dx-\\frac{1}{2}dy, dv(1,0)=\\frac{3}{8}dy \\)",
+          "correct": false,
+          "explanation": "Sai vì dấu của toàn bộ hệ thống kết quả bị đổi ngược."
+        },
+        {
+          "text": "\\( du(1,0)=-dx+\\frac{1}{2}dy, dv(1,0)=-\\frac{3}{4}dy \\)",
+          "correct": false,
+          "explanation": "Sai do hệ số mẫu số của vi phân ẩn v bị nhân đôi nhầm."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "question": "Chuyển tích phân kép \\( I=\\iint_{D}f(x,y)dxdy \\) sang tọa độ cực ta được \\( I=\\int_{\\pi/4}^{\\pi/2}d\\varphi\\int_{0}^{2\\cos\\varphi}dr \\). Tìm hàm \\( f(x,y) \\) và miền lấy tích phân D.",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( f(x,y)=\\sqrt{x^2+y^2}; D=\\{(x,y)|x^2+y^2\\le2x; y\\ge x\\} \\)",
+          "correct": false,
+          "explanation": "Sai vì nếu \\( f = r \\) thì biểu thức tích phân phải chứa thêm phần tử diện tích bậc hai."
+        },
+        {
+          "text": "\\( f(x,y)=\\frac{1}{\\sqrt{x^2+y^2}}; D=\\{(x,y)|x^2+y^2\\le2x; y\\ge x\\} \\)",
+          "correct": true,
+          "explanation": "Đúng vì định thức Jacobi bổ sung thêm r, để triệt tiêu và chỉ còn lại hệ số đơn vị thì cần hàm \\( f(r,\\varphi) = \\frac{1}{r} \\)."
+        },
+        {
+          "text": "\\( f(x,y)=\\frac{1}{\\sqrt{x^2+y^2}}; D=\\{(x,y)|x^2+y^2\\ge2x; y\\le x\\} \\)",
+          "correct": false,
+          "explanation": "Sai do xác định sai hướng bất đẳng thức biên của miền hình học D."
+        },
+        {
+          "text": "\\( f(x,y)=\\sqrt{x^2+y^2}; D=\\{(x,y)|x^2+y^2\\ge2x; y\\le x\\} \\)",
+          "correct": false,
+          "explanation": "Sai cả về hàm số gốc lẫn miền ràng buộc bất đẳng thức biên."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "question": "Tính diện tích S của mặt cầu \\( x^2+y^2+z^2=4a^2, z>0 \\) nằm trong hình trụ \\( x^2+y^2=a^2 \\) (với a là hằng số dương). Khẳng định nào dưới đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( S=8\\sqrt{3}\\pi a^2 \\)",
+          "correct": false,
+          "explanation": "Sai do nhân sai hệ số tỷ lệ hình học diện tích hình chiếu."
+        },
+        {
+          "text": "\\( S=2\\pi a^2(\\sqrt{3}+1) \\)",
+          "correct": false,
+          "explanation": "Sai vì công thức khai triển hình chiếu mặt không tạo ra biểu thức này."
+        },
+        {
+          "text": "\\( S=4\\pi a^2(\\sqrt{3}-1) \\)",
+          "correct": false,
+          "explanation": "Sai do nhầm lẫn thứ tự các số hạng hằng số trong dấu ngoặc."
+        },
+        {
+          "text": "\\( S=4\\pi a^2(2-\\sqrt{3}) \\)",
+          "correct": true,
+          "explanation": "Đúng bằng công thức tính diện tích mặt tích phân \\( S = \\iint_{D_{xy}} \\sqrt{1 + (z_x')^2 + (z_y')^2} dxdy \\)."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "question": "Tìm nghiệm tổng quát của phương trình vi phân tuyến tính cấp hai: \\( y''+9y=18x \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( y=(C_1x+C_2)e^{3x}+9x \\)",
+          "correct": false,
+          "explanation": "Sai vì phương trình đặc trưng có nghiệm phức \\( \\pm 3i \\) chứ không phải nghiệm thực."
+        },
+        {
+          "text": "\\( y=C_1\\cos 3x+C_2\\sin 3x+6x \\)",
+          "correct": false,
+          "explanation": "Sai ở phần tìm nghiệm riêng, nghiệm riêng chính xác phải là \\( 2x \\)."
+        },
+        {
+          "text": "\\( y=C_1\\cos 3x-C_2\\sin 3x+2x \\)",
+          "correct": true,
+          "explanation": "Đúng vì nghiệm thuần nhất có dạng lượng giác \\( C_1\\cos 3x + C_2\\sin 3x \\) và nghiệm riêng đơn giản là \\( y_r = 2x \\)."
+        },
+        {
+          "text": "\\( y=C_1e^{3x}+C_2e^{-3x}+6x \\)",
+          "correct": false,
+          "explanation": "Sai vì dạng nghiệm thuần nhất sử dụng hàm mũ chỉ đúng khi phương trình đặc trưng có nghiệm thực."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "question": "Tính tích phân kép \\( I=\\iint_{D}(x+y)dxdy \\) với \\( D=\\{(x,y)|x^2+y^2\\le1, y\\ge0\\} \\). Khẳng định nào dưới đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=\\frac{1}{2} \\)",
+          "correct": false,
+          "explanation": "Sai do tính toán tích phân thành phần biến y không chính xác."
+        },
+        {
+          "text": "\\( I=\\frac{1}{3} \\)",
+          "correct": false,
+          "explanation": "Sai do bỏ sót hệ số từ phép tích phân theo biến góc cực."
+        },
+        {
+          "text": "\\( I=\\frac{2}{3} \\)",
+          "correct": true,
+          "explanation": "Đúng vì thành phần theo x triệt tiêu do đối xứng, còn thành phần y đổi sang tọa độ cực cho tích phân bằng \\( \\frac{2}{3} \\)."
+        },
+        {
+          "text": "\\( I=\\frac{2}{5} \\)",
+          "correct": false,
+          "explanation": "Sai do chọn sai nguyên hàm của biến bán kính lũy thừa."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "question": "Gọi \\( z=z(x,y) \\) là hàm số ẩn được xác định từ phương trình \\( e^{xy}-y^3z=0 \\). Khẳng định nào dưới đây đúng về vi phân toàn phần \\( dz(0,1) \\)?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( dz(0,1)=dx+3dy \\)",
+          "correct": false,
+          "explanation": "Sai do xác định sai dấu của đạo hàm riêng theo biến y."
+        },
+        {
+          "text": "\\( dz(0,1)=dx-3dy \\)",
+          "correct": true,
+          "explanation": "Đúng bằng cách tính các đạo hàm riêng của hàm ẩn tại \\( x=0, y=1 \\) dẫn đến \\( z=1, z_x' = 1, z_y' = -3 \\)."
+        },
+        {
+          "text": "\\( dz(0,1)=3dx-2dy \\)",
+          "correct": false,
+          "explanation": "Sai do các hệ số đạo hàm riêng thành phần bị tính sai hoàn toàn."
+        },
+        {
+          "text": "\\( dz(0,1)=2dx-3dy \\)",
+          "correct": false,
+          "explanation": "Sai do hệ số của dx không khớp với giá trị đạo hàm ẩn theo x."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "question": "Tìm nghiệm tổng quát của phương trình vi phân \\( y''+2y'+y=e^x+e^{-x} \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( y=(C_1+xC_2+\\frac{1}{2}x^2)e^{-x}+\\frac{1}{4}e^x \\)",
+          "correct": true,
+          "explanation": "Đúng vì phương trình đặc trưng có nghiệm kép \\( -1 \\) (sinh ra nghiệm thuần nhất trùng vế phải bậc hai) và nghiệm riêng tương ứng cho hai thành phần hàm mũ."
+        },
+        {
+          "text": "\\( y=(C_1x+C_2)e^{-x}+9e^x \\)",
+          "correct": false,
+          "explanation": "Sai do cấu trúc đa thức nghiệm thuần nhất bổ trợ kép bị thiếu dạng bình phương."
+        },
+        {
+          "text": "\\( y=C_1e^x+C_2e^{-x}+6xe^x \\)",
+          "correct": false,
+          "explanation": "Sai hoàn toàn cấu trúc nghiệm cơ bản của đa thức đặc trưng."
+        },
+        {
+          "text": "\\( y=C_1\\cos x+C_2\\sin x+2e^x \\)",
+          "correct": false,
+          "explanation": "Sai do xác định nhầm nghiệm phương trình đặc trưng sang nghiệm phức."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "question": "Tìm khối lượng m của bản phẳng D được giới hạn bởi các parabol \\( y=x^2, x=y^2 \\), biết khối lượng riêng là \\( \\rho(x,y)=2\\sqrt{y} \\). Khẳng định nào đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( m=\\frac{1}{7} \\)",
+          "correct": false,
+          "explanation": "Sai do sai sót trong bước lấy tích phân lặp theo cận biến x."
+        },
+        {
+          "text": "\\( m=\\frac{5}{14} \\)",
+          "correct": false,
+          "explanation": "Sai do nhầm lẫn tính toán hằng số chung phân số."
+        },
+        {
+          "text": "\\( m=\\frac{3}{7} \\)",
+          "correct": true,
+          "explanation": "Đúng bằng công thức tính tích phân kép của khối lượng riêng: \\( m = \\int_{0}^{1}dx\\int_{x^2}^{\\sqrt{x}}2\\sqrt{y}dy = \\frac{3}{7} \\)."
+        },
+        {
+          "text": "\\( m=\\frac{2}{7} \\)",
+          "correct": false,
+          "explanation": "Sai do sai sót hiệu số hai lũy thừa tại biên tích phân."
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "question": "Tính tích phân kép \\( I=\\iint_{D}4((x-2)^2+y^2)dxdy \\) với \\( D=\\{(x,y)|x^2+y^2\\le1, y\\ge0\\} \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=9\\pi \\)",
+          "correct": true,
+          "explanation": "Đúng bằng cách khai triển đa thức dưới dấu tích phân và đổi sang tọa độ cực để tính toán chính xác."
+        },
+        {
+          "text": "\\( I=8\\pi \\)",
+          "correct": false,
+          "explanation": "Sai do tính thiếu phần tích phân của hằng số tự do."
+        },
+        {
+          "text": "\\( I=12\\pi \\)",
+          "correct": false,
+          "explanation": "Sai do cộng dư giá trị tích phân của thành phần đối xứng tuyến tính."
+        },
+        {
+          "text": "\\( I=4\\pi \\)",
+          "correct": false,
+          "explanation": "Sai do chia nhầm góc cực hệ số nửa đường tròn."
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "question": "Cho hàm số \\( z=(x+y^2)e^{x/3} \\) và điểm \\( M(-3,0) \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "M không phải là điểm dừng của z.",
+          "correct": false,
+          "explanation": "Sai vì tại M các đạo hàm riêng bậc nhất đều triệt tiêu, nên M là một điểm dừng."
+        },
+        {
+          "text": "M là điểm cực đại của z.",
+          "correct": false,
+          "explanation": "Sai vì định thức điều kiện cực trị cho thấy ma trận Hesse xác định dương."
+        },
+        {
+          "text": "M là điểm cực tiểu của z.",
+          "correct": true,
+          "explanation": "Đúng vì qua khảo sát vi phân cấp hai (ma trận Hesse), ta có \\( A > 0 \\) và \\( AC - B^2 > 0 \\) tại M."
+        },
+        {
+          "text": "M là điểm dừng nhưng không phải là điểm cực trị của z.",
+          "correct": false,
+          "explanation": "Sai vì điểm này thỏa mãn đầy đủ điều kiện đủ để trở thành điểm cực trị thực sự."
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "question": "Cho hàm số \\( z=2x+5y+\\ln\\sqrt{x^2+y^2} \\), tính vi phân cấp hai \\( d^2z(1,0) \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( d^2z(1,0)=dx^2+dy^2 \\)",
+          "correct": false,
+          "explanation": "Sai do tính nhầm dấu của thành phần đạo hàm riêng cấp hai theo x."
+        },
+        {
+          "text": "\\( d^2z(1,0)=dx^2+dxdy+dy^2 \\)",
+          "correct": false,
+          "explanation": "Sai do tính dư số hạng vi phân hỗn hợp biến chéo."
+        },
+        {
+          "text": "\\( d^2z(1,0)=-dx^2+dy^2 \\)",
+          "correct": true,
+          "explanation": "Đúng vì ta tính được \\( z_{xx}''(1,0) = -1 \\), \\( z_{xy}''(1,0) = 0 \\), \\( z_{yy}''(1,0) = 1 \\)."
+        },
+        {
+          "text": "\\( d^2z(1,0)=dx^2+dxdy-dy^2 \\)",
+          "correct": false,
+          "explanation": "Sai do tính lệch cả dấu lẫn thành phần vi phân hỗn hợp."
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "question": "Tính tích phân ba lớp \\( I=\\iiint_{V}\\frac{z^3}{\\sqrt{x^2+y^2}}dxdydz \\), với miền V giới hạn bởi \\( x^2+y^2\\le2x \\) và \\( 0\\le z\\le2 \\). Khẳng định nào đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=-18\\pi \\)",
+          "correct": false,
+          "explanation": "Sai vì hàm lấy tích phân dương trên toàn miền dương nên kết quả không thể âm."
+        },
+        {
+          "text": "\\( I=16\\pi \\)",
+          "correct": false,
+          "explanation": "Sai do nhầm lẫn tích phân của biến z và biến hình trụ cực hình tròn."
+        },
+        {
+          "text": "\\( I=-18 \\)",
+          "correct": false,
+          "explanation": "Sai do tính toán ra hằng số âm và thiếu thừa số hình học miền tròn."
+        },
+        {
+          "text": "\\( I=16 \\)",
+          "correct": true,
+          "explanation": "Đúng nhờ việc tách tích phân theo z độc lập và biến đổi phần hình trụ đáy phẳng qua tọa độ cực thích hợp."
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "question": "Đạo hàm riêng cấp hai \\( \\frac{\\partial^2z}{\\partial x^2} \\) của hàm số hai biến \\( z=xe^y+e^xy^2+3y\\sin x \\) là khẳng định nào?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( \\frac{\\partial^2z}{\\partial x^2}=xe^y+e^xy^2+y\\sin x \\)",
+          "correct": false,
+          "explanation": "Sai do không đạo hàm phần tử chứa x tuyến tính đầu tiên và sai hệ số hàm sin."
+        },
+        {
+          "text": "\\( \\frac{\\partial^2z}{\\partial x^2}=e^y+2ye^x-3y\\sin x \\)",
+          "correct": false,
+          "explanation": "Sai do nhầm lẫn quy tắc đạo hàm riêng theo biến x cho biến y."
+        },
+        {
+          "text": "\\( \\frac{\\partial^2z}{\\partial x^2}=e^xy^2-3y\\sin x \\)",
+          "correct": true,
+          "explanation": "Đúng vì đạo hàm bậc một theo x là \\( e^y + e^xy^2 + 3y\\cos x \\), đạo hàm tiếp lần hai theo x sẽ ra \\( e^xy^2 - 3y\\sin x \\)."
+        },
+        {
+          "text": "\\( \\frac{\\partial^2z}{\\partial x^2}=xe^y+e^xy^2+3y\\cos x \\)",
+          "correct": false,
+          "explanation": "Sai do giữ nguyên số hạng tuyến tính x và chưa chuyển đổi đạo hàm lượng giác lần hai."
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "question": "Cho hàm ẩn \\( z=f(x,y) \\) xác định bởi phương trình \\( z=xy^3+ye^{x/z} \\). Giá trị nào dưới đây là giá trị gần đúng của \\( z(0.02; 0.99) \\)?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "0.92",
+          "correct": false,
+          "explanation": "Sai do ước lượng vi phân toàn phần bị lệch khoảng cách lớn."
+        },
+        {
+          "text": "1.03",
+          "correct": true,
+          "explanation": "Đúng bằng cách áp dụng công thức tính gần đúng nhờ vi phân toàn phần tại điểm gốc lý tưởng \\( (0,1) \\)."
+        },
+        {
+          "text": "1.08",
+          "correct": false,
+          "explanation": "Sai do nhân sai giá trị gia số biến độc lập \\( \\Delta x, \\Delta y \\)."
+        },
+        {
+          "text": "1.12",
+          "correct": false,
+          "explanation": "Sai do tính sai giá trị đạo hàm ẩn tại điểm gốc."
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "question": "Tìm nghiệm tổng quát của phương trình vi phân tách biến/tuyến tính bậc nhất: \\( y'-\\frac{y}{x}=1 \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( y=|x|(C+\\ln x) \\)",
+          "correct": false,
+          "explanation": "Sai do thiếu dấu trị tuyệt đối bên trong biểu thức logarit tự nhiên tổng quát."
+        },
+        {
+          "text": "\\( y=|x|(C+\\ln|x|) \\)",
+          "correct": false,
+          "explanation": "Sai do dấu trị tuyệt đối thừa ở biến x ngoài đa thức hệ số tự do."
+        },
+        {
+          "text": "\\( y=x(C+\\ln|x|) \\)",
+          "correct": true,
+          "explanation": "Đúng vì áp dụng công thức nghiệm tổng quát của phương trình tuyến tính bậc nhất cấp một đưa về dạng tích phân chuẩn."
+        },
+        {
+          "text": "\\( y=x(C+\\ln x) \\)",
+          "correct": false,
+          "explanation": "Sai vì thiếu trị tuyệt đối trong logarit làm thu hẹp miền xác định của nghiệm tổng quát."
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "question": "Thay đổi thứ tự lấy tích phân của tích phân lặp: \\( \\int_{-2}^{4}dy\\int_{\\frac{y^2}{2}}^{y+4}f(x,y)dx \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( \\int_{-2}^{2}dx\\int_{-x}^{0}f(x,y)dy+\\int_{2}^{4}dx\\int_{0}^{\\sqrt{x}}f(x,y)dy \\)",
+          "correct": false,
+          "explanation": "Sai do phân tích sai các giao điểm hình học biên miền D."
+        },
+        {
+          "text": "\\( \\int_{-2}^{2}dx\\int_{-x}^{\\sqrt{2x}}f(x,y)dy+\\int_{2}^{4}dx\\int_{0}^{\\sqrt{x}}f(x,y)dy \\)",
+          "correct": false,
+          "explanation": "Sai do cận của tích phân thành phần không khớp với hình chiếu đồ thị gốc."
+        },
+        {
+          "text": "\\( \\int_{0}^{2}dx\\int_{-\\sqrt{2x}}^{\\sqrt{2x}}f(x,y)dy+\\int_{2}^{8}dx\\int_{x-4}^{\\sqrt{2x}}f(x,y)dy \\)",
+          "correct": true,
+          "explanation": "Đúng vì miền được chia lại theo trục Ox từ 0 đến 2 và từ 2 đến 8 với các hàm biên tương ứng chính xác từ phép nghịch đảo đồ thị."
+        },
+        {
+          "text": "\\( \\int_{0}^{2}dx\\int_{-\\sqrt{2x}}^{\\sqrt{2x}}f(x,y)dy+\\int_{2}^{4}dx\\int_{0}^{\\sqrt{2x}}f(x,y)dy \\)",
+          "correct": false,
+          "explanation": "Sai ở cận trên của tích phân theo x ngoài biên và thiếu hàm đường thẳng giới hạn dưới."
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "question": "Biết miền \\( \\Omega = \\{(x,y,z)|x^2+y^2+z^2\\le4, \\sqrt{x^2+y^2}\\le z\\} \\), hãy chuyển tích phân \\( I=\\iiint_{\\Omega}f(x,y,z)dxdydz \\) sang hệ tọa độ cầu. Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=\\int_{0}^{2\\pi}d\\varphi\\int_{0}^{\\pi/4}\\sin\\theta d\\theta\\int_{0}^{2}f(r\\cos\\varphi\\cos\\theta,r\\sin\\varphi\\cos\\theta,r\\sin\\theta)r^2dr \\)",
+          "correct": false,
+          "explanation": "Sai do thiết lập sai biểu thức liên hệ biến đổi góc cao độ cầu lượng giác."
+        },
+        {
+          "text": "\\( I=\\int_{0}^{2\\pi}d\\varphi\\int_{0}^{\\pi/4}\\sin\\theta d\\theta\\int_{0}^{2}f(r\\cos\\varphi\\sin\\theta,r\\sin\\varphi\\sin\\theta,r\\cos\\theta)r^2dr \\)",
+          "correct": true,
+          "explanation": "Đúng vì điều kiện hình nón cho góc vĩ độ \\( \\theta \\) từ 0 đến \\( \\pi/4 \\) và Jacobian hệ cầu chuẩn chứa ẩn số \\( r^2\\sin\\theta \\)."
+        },
+        {
+          "text": "\\( I=\\int_{0}^{2\\pi}d\\varphi\\int_{0}^{3\\pi/4}\\sin\\theta d\\theta\\int_{0}^{2}f(r\\cos\\varphi\\cos\\theta,r\\sin\\varphi\\cos\\theta,r\\sin\\theta)r^2dr \\)",
+          "correct": false,
+          "explanation": "Sai vì góc mở của hình nón bị mở rộng quá giới hạn thực tế của miền bài toán."
+        },
+        {
+          "text": "\\( I=\\int_{0}^{2\\pi}d\\varphi\\int_{0}^{3\\pi/4}\\sin\\theta d\\theta\\int_{0}^{2}f(r\\cos\\varphi\\sin\\theta,r\\sin\\varphi\\sin\\theta,r\\cos\\theta)r^2dr \\)",
+          "correct": false,
+          "explanation": "Sai do cận góc vĩ độ không tương thích với điều kiện nửa mặt cầu trên phối hợp hình nón."
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "question": "Cho hàm số \\( f(x,y)=x^2e^{y/x} \\). Tìm vi phân toàn phần \\( df(x,y) \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( df(x,y)=e^{y/x}(2x-y)dx+xdy \\)",
+          "correct": false,
+          "explanation": "Sai do phân phối thiếu thành phần mũ cho số hạng chứa dy."
+        },
+        {
+          "text": "\\( df(x,y)=(2x+y)dx+e^{y/x}xdy \\)",
+          "correct": false,
+          "explanation": "Sai ở việc tính đạo hàm riêng theo biến x bị mất đi số hạng hàm mũ."
+        },
+        {
+          "text": "\\( df(x,y)=(x-2y)dx+xdy \\)",
+          "correct": false,
+          "explanation": "Sai hoàn toàn do bỏ qua quy tắc đạo hàm hàm mũ hợp phức tạp."
+        },
+        {
+          "text": "\\( df(x,y)=e^{y/x}((2x-y)dx+xdy) \\)",
+          "correct": true,
+          "explanation": "Đúng nhờ việc thực hiện đạo hàm riêng chính xác: \\( f_x' = (2x-y)e^{y/x} \\) và \\( f_y' = xe^{y/x} \\), sau đó nhóm nhân tử chung."
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "question": "Phương trình vi phân nào sau đây là phương trình vi phân toàn phần?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( (ye^x+2x\\sin y+3y)dx+(e^x+x^2\\cos y+3x)dy=0 \\)",
+          "correct": true,
+          "explanation": "Đúng vì biểu thức thỏa mãn điều kiện Cauchy-Riemann đạo hàm chéo: \\( \\frac{\\partial P}{\\partial y} = \\frac{\\partial Q}{\\partial x} = e^x + 2x\\cos y + 3 \\)."
+        },
+        {
+          "text": "\\( (ye^x+x\\sin y+5x)dx+(e^x+y\\cos x+5y)dy=0 \\)",
+          "correct": false,
+          "explanation": "Sai vì đạo hàm chéo theo x và y của các biểu thức không bằng nhau."
+        },
+        {
+          "text": "\\( (ye^x+x\\sin y+xy)dx+(e^x+x^2\\cos y+xy)dy=0 \\)",
+          "correct": false,
+          "explanation": "Sai do sự khác biệt trong số hạng đa thức bổ trợ khi lấy đạo hàm riêng chéo."
+        },
+        {
+          "text": "\\( (ye^x+x\\cos y-2)dx+(e^x+y\\sin x-2)dy=0 \\)",
+          "correct": false,
+          "explanation": "Sai do các thành phần hàm lượng giác đảo dấu không tương thích điều kiện."
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "question": "Cho hàm \\( f(x,y,z) \\) khả tích trong miền đóng và bị chặn \\( \\Omega \\). Khẳng định nào sau đây không đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "Thay đổi ký hiệu biến số tích phân không làm thay đổi giá trị tích phân.",
+          "correct": false,
+          "explanation": "Khẳng định này đúng vì biến tích phân chỉ mang tính ký hiệu hình thức định danh."
+        },
+        {
+          "text": "Hàm \\( f(x,y,z) \\) khả tích trong miền \\( \\Omega \\) do đó liên tục trong \\( \\Omega \\).",
+          "correct": true,
+          "explanation": "Đúng vì đây là khẳng định SAI; một hàm số khả tích có thể gián đoạn tại một số điểm hoặc tập hợp có độ đo không."
+        },
+        {
+          "text": "Tích phân bị kẹp giữa tích của giá trị cực đại, cực tiểu với thể tích miền hình học.",
+          "correct": false,
+          "explanation": "Khẳng định này đúng theo tính chất đánh giá định lý trung bình của tích phân lớp."
+        },
+        {
+          "text": "Nếu miền chia được thành các khối nhỏ độc lập thì tích phân tổng bằng tổng các tích phân thành phần.",
+          "correct": false,
+          "explanation": "Khẳng định này đúng dựa vào tính chất cộng tính của tích phân xác định."
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "question": "Cho \\( I=\\iint_{D}f(x,y)dxdy \\), với D là miền được giới hạn bởi các đường \\( y=x^2, y=4 \\). Khẳng định nào sau đây không đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=\\int_{0}^{4}dy\\int_{-\\sqrt{y}}^{\\sqrt{y}}f(x,y)dx \\)",
+          "correct": false,
+          "explanation": "Khẳng định này đúng vì biểu diễn chính xác miền giới hạn theo biến tự do y."
+        },
+        {
+          "text": "\\( I=\\int_{0}^{4}dy\\int_{-2}^{2}f(x,y)dx \\)",
+          "correct": true,
+          "explanation": "Đúng vì đây là khẳng định SAI; cận của x khi cố định y phải phụ thuộc vào biến y thông qua hàm căn thức, không phải hằng số hằng định."
+        },
+        {
+          "text": "\\( I=\\int_{-2}^{0}dx\\int_{x^2}^{4}f(x,y)dy+\\int_{0}^{2}dx\\int_{x^2}^{4}f(x,y)dy \\)",
+          "correct": false,
+          "explanation": "Khẳng định này đúng nhờ tính chất tách đôi miền tích phân đối xứng qua trục tung."
+        },
+        {
+          "text": "\\( I=\\int_{-2}^{2}dx\\int_{x^2}^{4}f(x,y)dy \\)",
+          "correct": false,
+          "explanation": "Khẳng định này đúng theo cách thiết lập tích phân lặp chuẩn theo thứ tự dy trước dx sau."
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "question": "Tìm hàm \\( U(x,y) \\) thỏa mãn \\( dU(x,y)=(6xy^2-3x^2y)dx+(6x^2y-x^3)dy \\) và tính tích phân đường \\( I=\\int_{AB}(6xy^2-3x^2y)dx+(6x^2y-x^3)dy \\) nối từ \\( A(1,1) \\) đến \\( B(4,2) \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( U=3x^2y^2-yx^3+C \\); \\( I=62 \\)",
+          "correct": true,
+          "explanation": "Đúng vì hàm thế năng tìm được thông qua tích phân từng phần và giá trị tích phân độc lập đường đi bằng hiệu số \\( U(B) - U(A) = 62 \\)."
+        },
+        {
+          "text": "\\( U=6xy^2-y^3x+C \\); \\( I=9\\sqrt{3} \\)",
+          "correct": false,
+          "explanation": "Sai do xác định sai cấu trúc hàm nguyên hàm thế năng toàn phần."
+        },
+        {
+          "text": "\\( U=3x^2y-y^2x+C \\); \\( I=12\\sqrt{3} \\)",
+          "correct": false,
+          "explanation": "Sai do lấy nguyên hàm sai bậc của các biến số thành phần."
+        },
+        {
+          "text": "\\( U=3xy^2-y^3x^2+C \\); \\( I=53 \\)",
+          "correct": false,
+          "explanation": "Sai do tính nhầm hiệu số giá trị hàm tại hai đầu mút tọa độ biên."
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "question": "Tính đạo hàm \\( f'(1) \\) của hàm ẩn \\( y=f(x) \\) xác định bởi phương trình: \\( xy^5-x^3y^4+6x^5y+\\cos(x-1)=7 \\). Biết \\( f(1)=1 \\). Khẳng định nào đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( f'(1)=\\frac{7}{3} \\)",
+          "correct": false,
+          "explanation": "Sai do nhầm lẫn dấu trong công thức đạo hàm hàm ẩn trừ đạo hàm theo x trên đạo hàm theo y."
+        },
+        {
+          "text": "\\( f'(1)=12 \\)",
+          "correct": false,
+          "explanation": "Sai do tính toán nhầm giá trị của đạo hàm riêng phần tử lượng giác."
+        },
+        {
+          "text": "\\( f'(1)=\\frac{17}{3} \\)",
+          "correct": false,
+          "explanation": "Sai do tính sai hệ số tổng của mẫu số biểu thức đạo hàm ẩn."
+        },
+        {
+          "text": "\\( f'(1)=-4 \\)",
+          "correct": true,
+          "explanation": "Đúng vì áp dụng hệ thức đạo hàm hàm ẩn \\( y' = -\\frac{F_x'}{F_y'} \\) tại điểm \\( (1,1) \\) cho ra kết quả bằng -4."
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "question": "Tìm giá trị lớn nhất của hàm số \\( z=x^2-y^2 \\) trong miền đóng \\( D=\\{(x,y)|x^2+y^2\\le1\\} \\). Khẳng định nào dưới đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "Hàm số đạt giá trị lớn nhất là 2.",
+          "correct": false,
+          "explanation": "Sai vì giá trị 2 vượt quá bán kính biên tối đa của miền xác định ràng buộc."
+        },
+        {
+          "text": "Hàm số z đạt giá trị lớn nhất là 3.",
+          "correct": false,
+          "explanation": "Sai vì hàm số không thể vượt quá giới hạn biên bình phương đơn vị."
+        },
+        {
+          "text": "Hàm số không đạt giá trị lớn nhất.",
+          "correct": false,
+          "explanation": "Sai vì theo định lý Weierstrass, hàm liên tục trên miền đóng bị chặn bắt buộc phải đạt giá trị lớn nhất."
+        },
+        {
+          "text": "Hàm số z đạt giá trị lớn nhất là 1.",
+          "correct": true,
+          "explanation": "Đúng vì cực trị đạt được tại điểm biên \\( (\\pm 1, 0) \\) nằm trên đường tròn biên, cho giá trị tương ứng bằng 1."
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "question": "Chuyển sang tọa độ cực của tích phân kép \\( I=\\iint_{D}f(x,y)dxdy \\) với D là miền xác định bởi \\( x^2+y^2\\le4y \\). Khẳng định nào dưới đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=\\int_{0}^{\\pi}d\\varphi\\int_{0}^{4\\cos\\varphi}f(r\\cos\\varphi,r\\sin\\varphi)rdr \\)",
+          "correct": false,
+          "explanation": "Sai vì phương trình biên trong hệ cực của hình tròn này phải là hàm của sin chứ không phải cos."
+        },
+        {
+          "text": "\\( I=\\int_{0}^{2\\pi}d\\varphi\\int_{0}^{4\\sin\\varphi}f(r\\cos\\varphi,r\\sin\\varphi)rdr \\)",
+          "correct": false,
+          "explanation": "Sai ở góc chạy, do đường tròn nằm hoàn toàn ở nửa trên trục hoành nên góc chỉ chạy từ 0 đến \\( \\pi \\)."
+        },
+        {
+          "text": "\\( I=\\int_{0}^{\\pi}d\\varphi\\int_{0}^{4\\sin\\varphi}f(r\\cos\\varphi,r\\sin\\varphi)rdr \\)",
+          "correct": true,
+          "explanation": "Đúng vì bất đẳng thức biên chuyển thành \\( r^2 \\le 4r\\sin\\varphi \\Rightarrow r \\le 4\\sin\\varphi \\) và hình tròn nằm ở góc phần tư thứ nhất và thứ hai."
+        },
+        {
+          "text": "\\( I=\\int_{0}^{\\pi/2}d\\varphi\\int_{0}^{2a\\cos\\varphi}f(r\\cos\\varphi,r\\sin\\varphi)dr \\)",
+          "correct": false,
+          "explanation": "Sai hoàn toàn cả về tham số biên lẫn cấu trúc vi phân diện tích cực."
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "question": "Tính tích phân kép \\( I=\\iint_{D}(\\sqrt{x^2+y^2}+xy)dxdy \\) với miền \\( D=\\{(x,y)|x^2+y^2\\le R^2\\} \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=\\frac{\\pi}{3}R^3 \\)",
+          "correct": false,
+          "explanation": "Sai do tính toán nhầm hệ số tích phân góc cực toàn phần hình tròn."
+        },
+        {
+          "text": "\\( I=\\frac{3}{4}\\pi R^4 \\)",
+          "correct": false,
+          "explanation": "Sai vì nhầm lũy thừa bán kính từ thành phần biến đổi bậc hai."
+        },
+        {
+          "text": "\\( I=\\frac{3}{2}\\pi R^4 \\)",
+          "correct": false,
+          "explanation": "Sai do tích hợp sai thành phần hàm đối xứng lẻ."
+        },
+        {
+          "text": "\\( I=\\frac{2}{3}\\pi R^3 \\)",
+          "correct": true,
+          "explanation": "Đúng vì phần tích phân của số hạng \\( xy \\) bằng 0 do tính đối xứng lẻ, còn phần căn thức chuyển sang tọa độ cực cho ra kết quả trên."
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "question": "Cho tích phân \\( I=\\iint_{D}(x-1)(y+2)dxdy \\) với miền Elip \\( D=\\{(x,y)|\\frac{x^2}{4}+\\frac{y^2}{9}\\le1\\} \\). Khẳng định nào dưới đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( I=-6\\pi \\)",
+          "correct": false,
+          "explanation": "Sai do nhân sai giá trị diện tích cơ sở Elip."
+        },
+        {
+          "text": "\\( I=-12\\pi \\)",
+          "correct": true,
+          "explanation": "Đúng bằng cách đổi biến sang tọa độ Elip mở rộng, khai triển tích phân thu được kết quả là tích số hằng số nhân với diện tích Elip chuẩn."
+        },
+        {
+          "text": "\\( I=8\\pi \\)",
+          "correct": false,
+          "explanation": "Sai do xác định sai dấu âm phát sinh từ biểu thức hằng số tự do tích chéo."
+        },
+        {
+          "text": "\\( I=\\frac{3}{2}\\pi \\)",
+          "correct": false,
+          "explanation": "Sai do tính sai định thức Jacobi của phép đổi biến Elip."
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "question": "Tìm tích phân tổng quát của phương trình vi phân biến số phân ly: \\( \\frac{dx}{1+x^2}+\\frac{ydy}{\\sqrt{3+y^2}}=0 \\). Khẳng định nào sau đây đúng?",
+      "type": "single",
+      "answers": [
+        {
+          "text": "\\( \\arctan x+\\frac{2}{\\sqrt{3+y^2}}=C \\)",
+          "correct": false,
+          "explanation": "Sai vì nguyên hàm của số hạng chứa y bị tính sai dạng phân số nghịch đảo."
+        },
+        {
+          "text": "\\( \\arccos x+\\ln|y+\\sqrt{3+y^2}|=C \\)",
+          "correct": false,
+          "explanation": "Sai do áp dụng nhầm công thức nguyên hàm cơ bản sang hàm siêu vi khác."
+        },
+        {
+          "text": "\\( \\arctan x+\\sqrt{3+y^2}=C \\)",
+          "correct": true,
+          "explanation": "Đúng vì lấy tích phân trực tiếp hai vế độc lập ta được hàm \\( \\arctan x \\) và hàm căn thức chuẩn."
+        },
+        {
+          "text": "\\( \\arcsin x+\\ln|y+\\sqrt{3+y^2}|=C \\)",
+          "correct": false,
+          "explanation": "Sai hoàn toàn cả hai thành phần nguyên hàm cơ bản đối với biến x và biến y."
+        }
+      ]
+    }
+  ]
+}
