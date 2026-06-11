@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PTIT Quiz Lab</title>
+  <link rel="stylesheet" href="./Style/main.css" />
+
+  <!-- MathJax: hiển thị công thức toán học viết bằng LaTeX trong JSON.
+       Dùng \(...\) cho công thức inline và \[...\] cho công thức xuống dòng. -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["\\(", "\\)"], ["$", "$"]],
+        displayMath: [["\\[", "\\]"], ["$$", "$$"]],
+        processEscapes: true
+      },
+      chtml: {
+        scale: 1.04
+      },
+      startup: {
+        typeset: false
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  <script src="./JavaScript/main.js" defer></script>
+</head>
+<body>
+  <div class="page-bg">
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div class="glow-blob blob-3"></div>
+  </div>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">P</div>
+        <div>
+          <h1>PTIT Quiz Lab</h1>
+          <p>Học trắc nghiệm theo ngành, kì học và môn học</p>
+        </div>
+      </div>
+
+      <div class="topbar-right">
+        <div class="topbar-actions">
+          <div class="quick-stat"><span id="totalQuestions">0</span><small>Tổng câu</small></div>
+          <div class="quick-stat"><span id="answeredQuestions">0</span><small>Đã làm</small></div>
+          <div class="quick-stat"><span id="scorePreview">0</span><small>Đúng</small></div>
+        </div>
+        <button id="themeToggleBtn" class="theme-toggle-btn" title="Chuyển đổi giao diện">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21M4.93 4.93l1.59 1.59m10.96 10.96l1.59 1.59m-13.5 0l1.59-1.59M18.36 6.36l1.59-1.59M21 12h-2.25M5.25 12H3m9-5.25a5.25 5.25 0 100 10.5 5.25 5.25 0 000-10.5z" />
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="control-panel">
+        <section class="card active-lesson-card">
+          <div class="section-label">Bài đang học</div>
+          <h2 id="lessonName">Chưa có bài</h2>
+          <p id="quizTitle">Chưa có đề được nạp</p>
+          <small id="quizDescription">Hãy chọn ngành học, kì học, môn học rồi chọn một bài kiểm tra.</small>
+        </section>
+
+        <section class="card library-card">
+          <div class="card-title-row">
+            <div>
+              <div class="section-label">Chọn đề</div>
+              <h2>Thư viện bài kiểm tra</h2>
+            </div>
+            <button class="icon-btn" id="reloadLibraryBtn" title="Tải lại thư viện">↻</button>
+          </div>
+
+          <div class="select-stack">
+            <label><span><span class="step-num">1</span>Ngành học</span><select id="majorSelect"><option value="">Chọn ngành học</option></select></label>
+            <label><span><span class="step-num">2</span>Kì học</span><select id="semesterSelect" disabled><option value="">Chọn kì học</option></select></label>
+            <label><span><span class="step-num">3</span>Môn học</span><select id="subjectSelect" disabled><option value="">Chọn môn học</option></select></label>
+          </div>
+
+          <div class="available-quizzes">
+            <div class="available-header"><strong>Bài kiểm tra</strong><span id="availableCount">0 bài</span></div>
+            <div id="quizList" class="quiz-list"><p class="empty-library">Hãy chọn ngành học, kì học và môn học.</p></div>
+          </div>
+        </section>
+
+        <section class="card upload-card">
+          <div class="section-label">Nạp đề ngoài</div>
+          <p class="helper-text">Dùng khi bạn muốn thử nhanh một file JSON khác.</p>
+          <label class="file-picker">
+            <input id="fileInput" type="file" accept=".json,application/json" />
+            <span>Chọn file JSON từ máy</span>
+          </label>
+        </section>
+
+        <section class="card history-card">
+          <div class="card-title-row">
+            <div>
+              <div class="section-label">Kết quả đã lưu</div>
+              <h2>Lịch sử làm bài</h2>
+            </div>
+            <button class="icon-btn" id="clearHistoryBtn" title="Xóa toàn bộ lịch sử">🗑</button>
+          </div>
+
+          <div class="history-toolbar">
+            <span id="historyCount">0 lượt làm</span>
+            <button class="text-btn" id="exportHistoryBtn">Xuất JSON</button>
+          </div>
+
+          <div id="resultHistory" class="result-history">
+            <p class="empty-library">Chưa có kết quả nào được lưu.</p>
+          </div>
+        </section>
+      </aside>
+
+      <section class="main-panel">
+        <section class="hero-card">
+          <div class="hero-copy">
+            <div class="breadcrumb" id="heroBreadcrumb">Quiz workspace</div>
+            <h2 id="heroLessonTitle">PTIT Quiz Lab</h2>
+            <p id="heroLessonDescription">Hãy chọn đề theo thứ tự Ngành học → Kì học → Môn học → Bài kiểm tra.</p>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" id="submitAnswerBtn">Kiểm tra câu này</button>
+            <button class="btn btn-danger" id="finishQuizBtn">Nộp bài</button>
+          </div>
+        </section>
+
+        <section class="progress-card">
+          <div class="progress-info"><span id="questionCounter">Câu 0/0</span><span id="questionType">Chưa có đề</span></div>
+          <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        </section>
+
+        <section class="content-grid">
+          <section class="question-card">
+            <div id="emptyState" class="empty-state">
+              <div class="empty-illustration">📚</div>
+              <h3>Chưa chọn bài kiểm tra</h3>
+              <p>Bắt đầu bằng cách chọn <strong>Ngành học</strong>, sau đó chọn <strong>Kì học</strong>, <strong>Môn học</strong> và bấm vào một bài kiểm tra.</p>
+            </div>
+
+            <div id="quizBox" class="hidden">
+              <div class="question-header"><span id="questionBadge">Câu hỏi</span><span id="selectionHint">Chọn đáp án</span></div>
+              <h3 id="questionText" class="question-text"></h3>
+              <div id="answersContainer" class="answers"></div>
+              <div id="feedbackBox" class="feedback hidden"></div>
+              <div class="navigation">
+                <button class="btn btn-ghost" id="prevBtn">← Câu trước</button>
+                <button class="btn btn-ghost" id="nextBtn">Câu tiếp →</button>
+              </div>
+              <div class="keyboard-shortcuts-helper">
+                <span>💡 Phím tắt nhanh:</span>
+                <kbd>←</kbd> Câu trước &nbsp;&middot;&nbsp; 
+                <kbd>→</kbd> Câu tiếp &nbsp;&middot;&nbsp; 
+                <kbd>Enter</kbd> Kiểm tra &amp; Tiếp tục
+              </div>
+            </div>
+
+            <div id="resultBox" class="result-box hidden">
+              <div class="section-label">Kết quả</div>
+              <div class="result-container">
+                <div class="result-score-circle" id="resultScoreCircle">
+                  <span class="result-percent">0%</span>
+                  <span class="result-fraction">0/0 đúng</span>
+                </div>
+                <div class="result-info">
+                  <h3 id="resultTitle"></h3>
+                  <p id="resultMessage"></p>
+                </div>
+              </div>
+              <div class="result-actions">
+                <button class="btn btn-primary" id="restartBtn">Làm lại</button>
+                <button class="btn btn-ghost" id="showReviewBtn">Xem đáp án</button>
+              </div>
+              <div id="reviewList" class="review-list"></div>
+            </div>
+          </section>
+
+          <aside class="navigator-card">
+            <div class="navigator-header">
+              <div><div class="section-label">Điều hướng</div><h3>Danh sách câu</h3></div>
+              <button class="icon-btn" id="shuffleBtn" title="Trộn câu hỏi">⟳</button>
+            </div>
+            <div id="questionNavigator" class="question-navigator"></div>
+            <div class="legend">
+              <div><span class="dot dot-current"></span>Đang chọn</div>
+              <div><span class="dot dot-done"></span>Đã trả lời</div>
+              <div><span class="dot dot-correct"></span>Đúng</div>
+              <div><span class="dot dot-wrong"></span>Sai</div>
+            </div>
+          </aside>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+</body>
+</html>
