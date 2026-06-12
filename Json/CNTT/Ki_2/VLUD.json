@@ -1,0 +1,1090 @@
+{
+"title": "Bài kiểm tra 1",
+"lessonName": "Đề mẫu",
+"description": "Bài kiểm tra 1",
+"major": "Công nghệ thông tin",
+"semester": "Kì 2",
+"subject": "Vật lý ứng dụng",
+"questions": [
+{
+"id": 1,
+"question": "Trong cơ học chất điểm, một vật được quy ước là đứng yên dùng làm mốc để xác định vị trí của các vật trong không gian được gọi là gì?",
+"type": "single",
+"answers": [
+{
+"text": "Hệ quy chiếu",
+"correct": true,
+"explanation": "Theo tài liệu, vật được quy ước là đứng yên dùng làm mốc để xác định vị trí của các vật trong không gian được gọi là hệ quy chiếu."
+},
+{
+"text": "Chất điểm",
+"correct": false,
+"explanation": "Chất điểm là một vật có kích thước nhỏ không đáng kể so với những khoảng cách, kích thước đang khảo sát, không phải vật làm mốc."
+},
+{
+"text": "Quỹ đạo",
+"correct": false,
+"explanation": "Quỹ đạo là đường tạo bởi tập hợp tất cả các vị trí của chất điểm trong không gian suốt quá trình chuyển động."
+},
+{
+"text": "Vật rắn",
+"correct": false,
+"explanation": "Vật rắn là hệ chất điểm mà khoảng cách tương đối giữa các chất điểm của hệ không thay đổi."
+}
+]
+},
+{
+"id": 2,
+"question": "Một vật có kích thước nhỏ không đáng kể so với những khoảng cách, kích thước mà ta đang khảo sát được gọi là gì?",
+"type": "single",
+"answers": [
+{
+"text": "Vật rắn",
+"correct": false,
+"explanation": "Vật rắn là hệ chất điểm có khoảng cách giữa các điểm không đổi, không bắt buộc phải có kích thước nhỏ không đáng kể."
+},
+{
+"text": "Chất điểm",
+"correct": true,
+"explanation": "Theo định nghĩa trong tài liệu, một vật có kích thước nhỏ không đáng kể so với những khoảng cách, kích thước mà ta đang khảo sát được gọi là chất điểm."
+},
+{
+"text": "Hệ chất điểm",
+"correct": false,
+"explanation": "Hệ chất điểm là tập hợp của nhiều chất điểm, không phải là một vật đơn lẻ có kích thước nhỏ."
+},
+{
+"text": "Hệ quy chiếu",
+"correct": false,
+"explanation": "Hệ quy chiếu là vật mốc gắn với hệ tọa độ và đồng hồ để xác định vị trí và thời gian."
+}
+]
+},
+{
+"id": 3,
+"question": "Đại lượng nào đặc trưng cho chuyển động về phương, chiều và độ nhanh chậm theo thời gian?",
+"type": "single",
+"answers": [
+{
+"text": "Gia tốc",
+"correct": false,
+"explanation": "Gia tốc là đại lượng đặc trưng cho sự biến thiên của vectơ vận tốc theo thời gian, không phải đặc trưng cho độ nhanh chậm của chuyển động."
+},
+{
+"text": "Động lượng",
+"correct": false,
+"explanation": "Động lượng đặc trưng cho chuyển động về mặt động lực học và khả năng truyền chuyển động."
+},
+{
+"text": "Vận tốc",
+"correct": true,
+"explanation": "Tài liệu nêu rõ: Vận tốc là đại lượng đặc trưng cho chuyển động về phương, chiều và độ nhanh chậm theo thời gian."
+},
+{
+"text": "Tọa độ",
+"correct": false,
+"explanation": "Tọa độ là các giá trị xác định vị trí của chất điểm trong hệ tọa độ, không đặc trưng cho độ nhanh chậm."
+}
+]
+},
+{
+"id": 4,
+"question": "Đơn vị đo của vận tốc trong hệ đơn vị SI là gì?",
+"type": "single",
+"answers": [
+{
+"text": "\(m/s\)",
+"correct": true,
+"explanation": "Theo tài liệu, đơn vị đo của vận tốc trong hệ đơn vị SI là mét trên giây, ký hiệu là \(m/s\)."
+},
+{
+"text": "\(m/s^2\)",
+"correct": false,
+"explanation": "\(m/s^2\) là đơn vị đo của gia tốc trong hệ SI, không phải của vận tốc."
+},
+{
+"text": "\(rad/s\)",
+"correct": false,
+"explanation": "\(rad/s\) là đơn vị đo của vận tốc góc, không phải vận tốc dài."
+},
+{
+"text": "\(km/h\)",
+"correct": false,
+"explanation": "Mặc dù \(km/h\) là đơn vị vận tốc phổ biến nhưng không phải là đơn vị cơ bản trong hệ thống đo lường quốc tế SI."
+}
+]
+},
+{
+"id": 5,
+"question": "Gia tốc là đại lượng đặc trưng cho thuộc tính nào của vận tốc?",
+"type": "single",
+"answers": [
+{
+"text": "Sự biến thiên của vectơ vận tốc",
+"correct": true,
+"explanation": "Định nghĩa trong giáo trình chỉ ra rằng: Gia tốc là đại lượng đặc trưng cho sự biến thiên của vectơ vận tốc."
+},
+{
+"text": "Độ lớn tuyệt đối của vận tốc tại một thời điểm",
+"correct": false,
+"explanation": "Độ lớn tại một thời điểm do vận tốc tức thời đặc trưng, gia tốc chỉ đo sự thay đổi của vận tốc."
+},
+{
+"text": "Phương và chiều không đổi của chuyển động",
+"correct": false,
+"explanation": "Gia tốc xuất hiện khi vận tốc thay đổi về phương, chiều hoặc độ lớn, không phải đặc trưng cho sự không đổi."
+},
+{
+"text": "Quãng đường dịch chuyển dài hay ngắn",
+"correct": false,
+"explanation": "Quãng đường dịch chuyển được xác định bằng tích phân của vận tốc hoặc đo bằng mét, không do gia tốc trực tiếp đặc trưng."
+}
+]
+},
+{
+"id": 6,
+"question": "Thành phần gia tốc nào đặc trưng riêng cho sự biến đổi về độ lớn của vectơ vận tốc?",
+"type": "single",
+"answers": [
+{
+"text": "Gia tốc pháp tuyến",
+"correct": false,
+"explanation": "Gia tốc pháp tuyến đặc trưng cho sự biến đổi về phương của vectơ vận tốc, không phải về độ lớn."
+},
+{
+"text": "Gia tốc tiếp tuyến",
+"correct": true,
+"explanation": "Giáo trình ghi rõ: Vectơ gia tốc tiếp tuyến đặc trưng cho sự biến đổi về độ lớn của vectơ vận tốc."
+},
+{
+"text": "Gia tốc góc",
+"correct": false,
+"explanation": "Gia tốc góc đặc trưng cho sự biến thiên của vận tốc góc trong chuyển động tròn, không phải gia tốc thành phần của vận tốc dài."
+},
+{
+"text": "Gia tốc trọng trường",
+"correct": false,
+"explanation": "Gia tốc trọng trường là gia tốc đặc biệt do tác dụng của trọng lực, không phải tên thành phần phân tích theo quỹ đạo."
+}
+]
+},
+{
+"id": 7,
+"question": "Gia tốc pháp tuyến là thành phần gia tốc đặc trưng cho sự biến đổi nào của vectơ vận tốc?",
+"type": "single",
+"answers": [
+{
+"text": "Sự thay đổi về độ lớn",
+"correct": false,
+"explanation": "Sự thay đổi về độ lớn là do gia tốc tiếp tuyến đặc trưng."
+},
+{
+"text": "Sự thay đổi về phương",
+"correct": true,
+"explanation": "Theo tài liệu: Vectơ gia tốc pháp tuyến đặc trưng cho sự thay đổi phương của vectơ vận tốc."
+},
+{
+"text": "Sự thay đổi về khối lượng",
+"correct": false,
+"explanation": "Khối lượng là thuộc tính nội tại của vật, không liên quan đến đại lượng gia tốc pháp tuyến."
+},
+{
+"text": "Sự thay đổi về năng lượng",
+"correct": false,
+"explanation": "Năng lượng biến đổi liên quan đến công của lực, không phải thuộc tính phương chiều của vận tốc do gia tốc pháp tuyến mô tả."
+}
+]
+},
+{
+"id": 8,
+"question": "Khi một chất điểm chuyển động thẳng, thành phần gia tốc nào bằng 0?",
+"type": "single",
+"answers": [
+{
+"text": "Gia tốc tiếp tuyến \(a_t\)",
+"correct": false,
+"explanation": "Trong chuyển động thẳng biến đổi, gia tốc tiếp tuyến vẫn có thể khác 0 để làm thay đổi độ lớn vận tốc."
+},
+{
+"text": "Gia tốc pháp tuyến \(a_n\)",
+"correct": true,
+"explanation": "Tài liệu ghi chú: Khi \(a_n = 0\), vectơ vận tốc không thay đổi phương, chất điểm chuyển động thẳng."
+},
+{
+"text": "Gia tốc toàn phần \(a\)",
+"correct": false,
+"explanation": "Gia tốc toàn phần chỉ bằng 0 khi chuyển động là thẳng đều."
+},
+{
+"text": "Gia tốc góc \(\beta\)",
+"correct": false,
+"explanation": "Gia tốc góc dùng cho chuyển động quay hoặc chuyển động tròn, không dùng xét trực tiếp cho điều kiện chuyển động thẳng tổng quát."
+}
+]
+},
+{
+"id": 9,
+"question": "Khi gia tốc tiếp tuyến \(a_t = 0\) và gia tốc pháp tuyến \(a_n\) khác 0, chất điểm có dạng chuyển động nào?",
+"type": "single",
+"answers": [
+{
+"text": "Chuyển động thẳng đều",
+"correct": false,
+"explanation": "Chuyển động thẳng đều yêu cầu cả hai thành phần gia tốc đều bằng 0."
+},
+{
+"text": "Chuyển động thẳng biến đổi đều",
+"correct": false,
+"explanation": "Chuyển động thẳng biến đổi đều có gia tốc pháp tuyến bằng 0 và gia tốc tiếp tuyến là hằng số khác 0."
+},
+{
+"text": "Chuyển động cong đều",
+"correct": true,
+"explanation": "Tài liệu xác định: Khi \(a_t = 0\), vectơ vận tốc không đổi về trị số và chiều (độ lớn vận tốc không đổi), nó chuyển động cong đều."
+},
+{
+"text": "Chuyển động rơi tự do",
+"correct": false,
+"explanation": "Rơi tự do là chuyển động thẳng nhanh dần đều với gia tốc bằng g, nên gia tốc tiếp tuyến phải khác 0."
+}
+]
+},
+{
+"id": 10,
+"question": "Chuyển động nào của vật dưới tác dụng của trọng lực với vận tốc ban đầu \(v_0 = 0\) và gia tốc \(a = g\)?",
+"type": "single",
+"answers": [
+{
+"text": "Chuyển động tròn đều",
+"correct": false,
+"explanation": "Chuyển động tròn đều có quỹ đạo tròn và tốc độ góc không đổi, không phải chuyển động do trọng lực có vận tốc đầu bằng không."
+},
+{
+"text": "Rơi tự do",
+"correct": true,
+"explanation": "Giáo trình nêu rõ trường hợp đặc biệt: Rơi tự do là chuyển động của vật dưới tác dụng của trọng lực với vận tốc ban đầu \(v_0 = 0\) và gia tốc \(a = g\)."
+},
+{
+"text": "Chuyển động tịnh tiến đều",
+"correct": false,
+"explanation": "Chuyển động tịnh tiến đều có gia tốc bằng không, trong khi rơi tự do có gia tốc biến đổi đều bằng g."
+},
+{
+"text": "Chuyển động quay",
+"correct": false,
+"explanation": "Chuyển động quay quanh một trục cố định có quỹ đạo các điểm là đường tròn, không phải chuyển động thẳng đứng như rơi tự do."
+}
+]
+},
+{
+"id": 11,
+"question": "Vận tốc góc tức thời trong chuyển động tròn được đo bằng đơn vị nào dưới đây?",
+"type": "single",
+"answers": [
+{
+"text": "Radian trên giây (\(rad/s\))",
+"correct": true,
+"explanation": "Theo tài liệu, vận tốc góc có đơn vị là radian trên giây, viết tắt là \(rad/s\)."
+},
+{
+"text": "Mét trên giây (\(m/s\))",
+"correct": false,
+"explanation": "Mét trên giây là đơn vị của vận tốc dài, không phải của vận tốc góc."
+},
+{
+"text": "Radian trên giây bình phương (\(rad/s^2\))",
+"correct": false,
+"explanation": "Radian trên giây bình phương là đơn vị đo của gia tốc góc."
+},
+{
+"text": "Vòng trên phút (\(vòng/phút\))",
+"correct": false,
+"explanation": "Vòng trên phút là đơn vị đo kỹ thuật của tốc độ quay, không phải đơn vị chuẩn tiêu chuẩn SI nêu trong phần định nghĩa tổng quát."
+}
+]
+},
+{
+"id": 12,
+"question": "Gia tốc góc là đại lượng đặc trưng cho sự biến thiên của đại lượng nào?",
+"type": "single",
+"answers": [
+{
+"text": "Vận tốc góc",
+"correct": true,
+"explanation": "Theo tài liệu, gia tốc góc đặc trưng cho sự biến thiên một lượng góc quay hoặc biến thiên của vận tốc góc của chất điểm chuyển động tròn."
+},
+{
+"text": "Vận tốc dài",
+"correct": false,
+"explanation": "Sự biến thiên của vận tốc dài được đặc trưng bởi gia tốc dài (gia tốc toàn phần hoặc gia tốc tiếp tuyến)."
+},
+{
+"text": "Mômen quán tính",
+"correct": false,
+"explanation": "Mômen quán tính là đại lượng đặc trưng cho quán tính của vật trong chuyển động quay, không biến thiên để tạo ra gia tốc góc."
+},
+{
+"text": "Động lượng",
+"explanation": "Sự biến thiên của động lượng theo thời gian bằng tổng hợp ngoại lực, do định lý động lượng quy định.",
+"correct": false
+}
+]
+},
+{
+"id": 13,
+"question": "Khi gia tốc góc \(\beta = 0\) và vận tốc góc \(\omega\) không đổi, chuyển động tròn được gọi là gì?",
+"type": "single",
+"answers": [
+{
+"text": "Chuyển động tròn nhanh dần đều",
+"correct": false,
+"explanation": "Chuyển động tròn nhanh dần đều yêu cầu tích vận tốc góc và gia tốc góc lớn hơn 0."
+},
+{
+"text": "Chuyển động tròn biến đổi đều",
+"correct": false,
+"explanation": "Chuyển động tròn biến đổi đều có gia tốc góc là hằng số khác 0."
+},
+{
+"text": "Chuyển động tròn đều",
+"correct": true,
+"explanation": "Tài liệu ghi rõ: Khi \(\beta = 0\), \(\omega\) không đổi, chuyển động tròn đều."
+},
+{
+"text": "Chuyển động tịnh tiến",
+"correct": false,
+"explanation": "Chuyển động tịnh tiến là chuyển động của vật rắn mà mọi điểm có quỹ đạo giống nhau, không phải chuyển động tròn của chất điểm."
+}
+]
+},
+{
+"id": 14,
+"question": "Tính chất bảo toàn trạng thái chuyển động của một chất điểm cô lập được gọi là gì?",
+"type": "single",
+"answers": [
+{
+"text": "Ma sát",
+"correct": false,
+"explanation": "Ma sát là lực cản trở chuyển động, không phải tính chất bảo toàn trạng thái chuyển động."
+},
+{
+"text": "Quán tính",
+"correct": true,
+"explanation": "Theo định luật I Newton trong tài liệu: Tính chất bảo toàn trạng thái chuyển động được gọi là quán tính."
+},
+{
+"text": "Động lực",
+"correct": false,
+"explanation": "Động lực học là phân ngành nghiên cứu mối quan hệ giữa chuyển động và tương tác lực, không phải tên tính chất này."
+},
+{
+"text": "Phản lực",
+"correct": false,
+"explanation": "Phản lực là lực xuất hiện tương tác trực đối theo định luật III Newton."
+}
+]
+},
+{
+"id": 15,
+"question": "Định luật I Newton còn có tên gọi khác là gì?",
+"type": "single",
+"answers": [
+{
+"text": "Định luật quán tính",
+"correct": true,
+"explanation": "Tài liệu ghi rõ: Vì vậy định luật I Newton còn được gọi là định luật quán tính."
+},
+{
+"text": "Định luật động lượng",
+"correct": false,
+"explanation": "Định luật động lượng liên quan đến đạo hàm động lượng theo thời gian, tương đương định luật II."
+},
+{
+"text": "Định luật tác dụng và phản tác dụng",
+"correct": false,
+"explanation": "Định luật về lực tương tác trực đối tác dụng và phản tác dụng là định luật III Newton."
+},
+{
+"text": "Nguyên lý Galiléo",
+"correct": false,
+"explanation": "Nguyên lý tương đối Galiléo nói về sự bất biến của các phương trình cơ học trong các hệ quy chiếu quán tính."
+}
+]
+},
+{
+"id": 16,
+"question": "Theo định luật II Newton, gia tốc chuyển động của một chất điểm có mối quan hệ như thế nào với lực tác dụng và khối lượng?",
+"type": "single",
+"answers": [
+{
+"text": "Tỷ lệ thuận với lực tác dụng và tỷ lệ thuận với khối lượng",
+"correct": false,
+"explanation": "Gia tốc tỷ lệ nghịch với khối lượng, không phải tỷ lệ thuận."
+},
+{
+"text": "Tỷ lệ nghịch với lực tác dụng và tỷ lệ thuận với khối lượng",
+"correct": false,
+"explanation": "Gia tốc tỷ lệ thuận với lực tác dụng, phát biểu này bị ngược."
+},
+{
+"text": "Tỷ lệ thuận với lực tác dụng và tỷ lệ nghịch với khối lượng",
+"correct": true,
+"explanation": "Giáo trình phát biểu: Gia tốc chuyển động của một chất điểm tỷ lệ thuận với lực tác dụng và tỷ lệ nghịch với khối lượng của chất điểm ấy."
+},
+{
+"text": "Không phụ thuộc vào lực tác dụng mà chỉ phụ thuộc khối lượng",
+"correct": false,
+"explanation": "Gia tốc bắt buộc phụ thuộc tuyến tính vào lực tác dụng theo công thức \(\vec{a} = \vec{F}/m\)."
+}
+]
+},
+{
+"id": 17,
+"question": "Hệ quy chiếu trong đó định luật quán tính được nghiệm đúng được gọi là gì?",
+"type": "single",
+"answers": [
+{
+"text": "Hệ quy chiếu không quán tính",
+"correct": false,
+"explanation": "Hệ quy chiếu không quán tính là hệ chuyển động có gia tốc, nơi định luật quán tính không còn nghiệm đúng nếu không thêm lực quán tính."
+},
+{
+"text": "Hệ quy chiếu quán tính",
+"correct": true,
+"explanation": "Theo định nghĩa: Hệ quy chiếu trong đó định luật quán tính được nghiệm đúng là hệ quy chiếu quán tính."
+},
+{
+"text": "Hệ tọa độ Descartes",
+"correct": false,
+"explanation": "Hệ tọa độ Descartes chỉ là một phương pháp toán học để xác định vị trí bằng các trục vuông góc, không mang bản chất vật lý của hệ quy chiếu quán tính."
+},
+{
+"text": "Hệ Địa tâm quay",
+"correct": false,
+"explanation": "Hệ Địa tâm nếu tính đến chuyển động quay đầy đủ sẽ là hệ không quán tính, tài liệu chỉ coi gần đúng là quán tính khi bỏ qua chuyển động quay."
+}
+]
+},
+{
+"id": 18,
+"question": "Theo định luật III Newton, lực tương tác giữa hai chất điểm có đặc điểm nào sau đây?",
+"type": "single",
+"answers": [
+{
+"text": "Là hai lực cùng phương, cùng chiều, cùng độ lớn và đặt vào một vật",
+"correct": false,
+"explanation": "Hai lực trực đối phải ngược chiều và đặt vào hai chất điểm khác nhau."
+},
+{
+"text": "Là hai lực trực đối (cùng phương, ngược chiều, cùng độ lớn và đặt trên hai chất điểm khác nhau)",
+"correct": true,
+"explanation": "Tài liệu ghi rõ: Lực tương tác giữa hai chất điểm là hai lực trực đối (hai lực cùng phương, ngược chiều, cùng độ lớn và đặt trên hai chất điểm)."
+},
+{
+"text": "Là hai lực cân bằng nhau nên triệt tiêu nhau hoàn toàn",
+"correct": false,
+"explanation": "Tài liệu nhấn mạnh hai lực này có điểm đặt khác nhau nên chúng không phải là hai lực cân bằng, tức là không triệt tiêu nhau."
+},
+{
+"text": "Là hai lực có phương vuông góc với nhau",
+"correct": false,
+"explanation": "Hai lực tương tác theo định luật III luôn cùng nằm trên một đường thẳng nối hai chất điểm, tức là cùng phương."
+}
+]
+},
+{
+"id": 19,
+"question": "Vectơ động lượng của một chất điểm được xác định bằng biểu thức nào?",
+"type": "single",
+"answers": [
+{
+"text": "\(\vec{p} = m\vec{v}\)",
+"correct": true,
+"explanation": "Theo tài liệu, vectơ động lượng \(\vec{p}\) của chất điểm được tính bằng tích khối lượng \(m\) và vectơ vận tốc \(\vec{v}\)."
+},
+{
+"text": "\(\vec{p} = \frac{1}{2}mv^2\)",
+"correct": false,
+"explanation": "\(\frac{1}{2}mv^2\) là biểu thức tính động năng, một đại lượng vô hướng, không phải vectơ động lượng."
+},
+{
+"text": "\(\vec{p} = m\vec{a}\)",
+"correct": false,
+"explanation": "\(m\vec{a}\) bằng tổng hợp ngoại lực tác dụng lên vật theo định luật II Newton."
+},
+{
+"text": "\(\vec{p} = I\vec{\omega}\)",
+"correct": false,
+"explanation": "\(I\vec{\omega}\) là mômen động lượng của chất điểm chuyển động tròn, không phải động lượng tuyến tính thông thường."
+}
+]
+},
+{
+"id": 20,
+"question": "Theo định lý về động lượng, đạo hàm động lượng của một chất điểm theo thời gian bằng đại lượng nào?",
+"type": "single",
+"answers": [
+{
+"text": "Tổng hợp các ngoại lực tác dụng lên chất điểm",
+"correct": true,
+"explanation": "Định lý về động lượng phát biểu: Đạo hàm động lượng của một chất điểm theo thời gian bằng tổng hợp các ngoại lực tác dụng lên chất điểm đó."
+},
+{
+"text": "Động năng của chất điểm",
+"correct": false,
+"explanation": "Động năng là năng lượng chuyển động, không bằng đạo hàm thời gian của động lượng."
+},
+{
+"text": "Mômen lực tác dụng lên chất điểm",
+"correct": false,
+"explanation": "Mômen lực bằng đạo hàm của mômen động lượng theo thời gian, chứ không phải đạo hàm động lượng."
+},
+{
+"text": "Vận tốc tức thời của chất điểm",
+"correct": false,
+"explanation": "Vận tốc tức thời bằng đạo hàm của bán kính vectơ vị trí theo thời gian."
+}
+]
+},
+{
+"id": 21,
+"question": "Đại lượng nào đặc trưng cho trạng thái chuyển động về mặt động lực học và đặc trưng cho khả năng truyền chuyển động của chất điểm?",
+"type": "single",
+"answers": [
+{
+"text": "Vận tốc",
+"correct": false,
+"explanation": "Vận tốc chỉ đặc trưng cho chuyển động về mặt động học, không chứa thông tin khối lượng nên không đặc trưng đầy đủ về động lực học."
+},
+{
+"text": "Động lượng",
+"correct": true,
+"explanation": "Tài liệu ghi rõ: Động lượng đặc trưng cho chuyển động về mặt động lực học... Hơn nữa động lượng còn đặc trưng cho khả năng truyền chuyển động của chất điểm."
+},
+{
+"text": "Gia tốc",
+"correct": false,
+"explanation": "Gia tốc đặc trưng cho sự biến thiên của vận tốc, không đặc trưng cho khả năng truyền chuyển động trực tiếp khi va chạm như động lượng."
+},
+{
+"text": "Khối lượng",
+"correct": false,
+"explanation": "Khối lượng chỉ đặc trưng cho mức quán tính của vật, không phải là đại lượng đặc trưng cho trạng thái chuyển động."
+}
+]
+},
+{
+"id": 22,
+"question": "Động lượng tổng hợp của một hệ chất điểm luôn được bảo toàn trong điều kiện nào?",
+"type": "single",
+"answers": [
+{
+"text": "Hệ chịu tác dụng của ngoại lực rất lớn",
+"correct": false,
+"explanation": "Khi ngoại lực tác dụng lớn và tổng hợp ngoại lực khác 0, động lượng của hệ sẽ biến thiên chứ không bảo toàn."
+},
+{
+"text": "Hệ là cô lập (tổng hợp ngoại lực bằng 0)",
+"correct": true,
+"explanation": "Định luật bảo toàn động lượng nêu rõ: Động lượng tổng hợp của một hệ cô lập luôn luôn được bảo toàn."
+},
+{
+"text": "Hệ chuyển động thẳng đều có ma sát",
+"correct": false,
+"explanation": "Sự có mặt của lực ma sát cô lập cần được bù bởi lực khác, nhưng điều kiện tổng quát cốt lõi là hệ phải cô lập."
+},
+{
+"text": "Hệ vật rắn chuyển động quay quanh trục",
+"correct": false,
+"explanation": "Chuyển động quay quanh trục cố định thường bảo toàn mômen động lượng nếu mômen ngoại lực bằng 0, không phải điều kiện cốt lõi của động lượng tuyến tính hệ cô lập."
+}
+]
+},
+{
+"id": 23,
+"question": "Định lý về mômen động lượng phát biểu rằng đạo hàm theo thời gian của mômen động lượng của chất điểm bằng đại lượng nào?",
+"type": "single",
+"answers": [
+{
+"text": "Tổng mômen đối với điểm O của các lực tác dụng lên chất điểm",
+"correct": true,
+"explanation": "Theo tài liệu: Đạo hàm theo thời gian của mômen động lượng đối với điểm O của chất điểm chuyển động bằng tổng mômen đối với điểm O của các lực tác dụng lên chất điểm."
+},
+{
+"text": "Động lượng tuyến tính của chất điểm",
+"correct": false,
+"explanation": "Động lượng tuyến tính liên quan đến định lý động lượng thông thường, không phải mômen động lượng."
+},
+{
+"text": "Vận tốc góc của chất điểm",
+"correct": false,
+"explanation": "Vận tốc góc tỉ lệ thuận với mômen động lượng qua mômen quán tính, không phải bằng đạo hàm thời gian của nó."
+},
+{
+"text": "Khối lượng toàn phần của chất điểm",
+"correct": false,
+"explanation": "Khối lượng là đại lượng không đổi trong cơ học cổ điển, không bằng đạo hàm của mômen động lượng."
+}
+]
+},
+{
+"id": 24,
+"question": "Mômen động lượng của một chất điểm chuyển động tròn được tính bằng tích của hai đại lượng nào?",
+"type": "single",
+"answers": [
+{
+"text": "Khối lượng và vận tốc dài",
+"correct": false,
+"explanation": "Tích khối lượng và vận tốc dài là động lượng, không phải mômen động lượng."
+},
+{
+"text": "Mômen quán tính của chất điểm và vectơ vận tốc góc",
+"correct": true,
+"explanation": "Giáo trình kết luận: Mômen động lượng của một chất điểm chuyển động tròn bằng tích của mômen quán tính của chất điểm với véc tơ vận tốc góc của chất điểm ấy."
+},
+{
+"text": "Gia tốc tiếp tuyến và bán kính quỹ đạo",
+"correct": false,
+"explanation": "Tích gia tốc tiếp tuyến và bán kính liên quan đến gia tốc góc và các yếu tố động học, không ra mômen động lượng."
+},
+{
+"text": "Lực tác dụng và cánh tay đòn",
+"correct": false,
+"explanation": "Tích của lực tác dụng và cánh tay đòn tạo nên mômen lực, không phải mômen động lượng."
+}
+]
+},
+{
+"id": 25,
+"question": "Theo cơ học cổ điển, thời gian có thuộc tính nào khi xét trong các hệ quy chiếu khác nhau?",
+"type": "single",
+"answers": [
+{
+"text": "Thời gian có tính tương đối, phụ thuộc hệ quy chiếu",
+"correct": false,
+"explanation": "Trong cơ học cổ điển Galiléo, thời gian được coi là tuyệt đối, không phụ thuộc vào hệ quy chiếu."
+},
+{
+"text": "Thời gian có tính tuyệt đối, không phụ thuộc vào hệ quy chiếu",
+"correct": true,
+"explanation": "Tài liệu ghi rõ: Thời gian có tính chất tuyệt đối, không phụ thuộc vào hệ quy chiếu (\(t' = t\))."
+},
+{
+"text": "Thời gian trôi chậm lại khi hệ quy chiếu chuyển động nhanh",
+"correct": false,
+"explanation": "Sự trôi chậm của thời gian thuộc về thuyết tương đối Einstein, không phải quan điểm không gian thời gian của cơ học cổ điển Galiléo đang xét ở mục này."
+},
+{
+"text": "Thời gian dừng lại khi vật đạt vận tốc ánh sáng",
+"correct": false,
+"explanation": "Cơ học cổ điển không giới hạn vận tốc ánh sáng và luôn coi thời gian đồng nhất tuyệt đối ở mọi hệ quy chiếu."
+}
+]
+},
+{
+"id": 26,
+"question": "Nguyên lý tương đối Galiléo phát biểu điều gì về dạng của các phương trình động lực học?",
+"type": "single",
+"answers": [
+{
+"text": "Các phương trình động lực học có dạng khác nhau hoàn toàn trong mỗi hệ quán tính",
+"correct": false,
+"explanation": "Phát biểu này sai vì các hệ quán tính có vai trò cơ học như nhau nên phương trình phải có cùng dạng."
+},
+{
+"text": "Các phương trình động lực học có dạng như nhau trong các hệ quy chiếu quán tính khác nhau",
+"correct": true,
+"explanation": "Tài liệu khẳng định: Các phương trình động lực học có dạng như nhau trong các hệ quy chiếu quán tính khác nhau. Đó là nguyên lý tương đối Galiléo."
+},
+{
+"text": "Các phương trình động lực học chỉ đúng trong hệ Nhất tâm",
+"correct": false,
+"explanation": "Hệ Nhất tâm chỉ là một ví dụ thực tế chính xác cao của hệ quán tính, nguyên lý áp dụng cho mọi hệ quán tính."
+},
+{
+"text": "Các phương trình động lực học thay đổi dạng phụ thuộc vào vận tốc tuyệt đối của hệ",
+"correct": false,
+"explanation": "Theo phép biến đổi Galiléo, phương trình động lực học là bất biến, không phụ thuộc vào vận tốc tịnh tiến đều của hệ."
+}
+]
+},
+{
+"id": 27,
+"question": "Hệ quy chiếu quán tính lý tưởng trong thực tế thường được chọn gần đúng bằng cách gắn gốc tọa độ ở đâu?",
+"type": "single",
+"answers": [
+{
+"text": "Khối tâm của Thái Dương Hệ (Hệ Nhật tâm)",
+"correct": true,
+"explanation": "Tài liệu chỉ ra: Có thể chọn một hệ quy chiếu quán tính một cách gần đúng bằng cách gắn khối tâm của thái dương hệ với gốc của một hệ trục tọa độ... Hệ quy chiếu quán tính này có tên là hệ Nhật tâm."
+},
+{
+"text": "Bề mặt của Mặt Trăng",
+"correct": false,
+"explanation": "Mặt Trăng quay quanh Trái Đất với gia tốc lớn, không thích hợp làm hệ quy chiếu quán tính tốt bằng hệ Nhật tâm."
+},
+{
+"text": "Một phòng thí nghiệm đang gia tốc trên Trái Đất",
+"correct": false,
+"explanation": "Hệ đang gia tốc là hệ không quán tính, vi phạm định luật quán tính Newton."
+},
+{
+"text": "Tâm của một con tàu vũ trụ đang tăng tốc",
+"correct": false,
+"explanation": "Con tàu đang tăng tốc tạo ra lực quán tính lớn, là một hệ không quán tính rõ rệt."
+}
+]
+},
+{
+"id": 28,
+"question": "Lực quán tính xuất hiện trong hệ quy chiếu nào?",
+"type": "single",
+"answers": [
+{
+"text": "Hệ quy chiếu quán tính",
+"correct": false,
+"explanation": "Trong hệ quy chiếu quán tính, các định luật Newton nghiệm đúng mà không cần thêm lực quán tính."
+},
+{
+"text": "Hệ quy chiếu không quán tính (chuyển động có gia tốc)",
+"correct": true,
+"explanation": "Tài liệu viết: Trong hệ \(O'\) chuyển động có gia tốc đối với hệ \(O\)... ngoài các lực tác dụng lên chất điểm còn phải kể thêm lực quán tính. Hệ quy chiếu như vậy gọi là hệ quy chiếu không quán tính."
+},
+{
+"text": "Hệ quy chiếu đứng yên tuyệt đối",
+"correct": false,
+"explanation": "Không có hệ quy chiếu đứng yên tuyệt đối, và nếu đứng yên hoặc chuyển động thẳng đều thì là hệ quán tính, không xuất hiện lực quán tính."
+},
+{
+"text": "Hệ quy chiếu Nhật tâm lý tưởng",
+"correct": false,
+"explanation": "Hệ Nhật tâm được coi gần đúng là hệ quán tính, nên không dùng để khảo sát hiện tượng xuất hiện lực quán tính do hệ nền bị gia tốc."
+}
+]
+},
+{
+"id": 29,
+"question": "Về phương và chiều, lực quán tính \(\vec{F}_{qt}\) liên hệ thế nào với gia tốc \(\vec{a}_0\) của hệ quy chiếu không quán tính?",
+"type": "single",
+"answers": [
+{
+"text": "Luôn cùng phương và cùng chiều với gia tốc \(\vec{a}_0\)",
+"correct": false,
+"explanation": "Lực quán tính luôn ngược chiều với gia tốc của hệ quy chiếu."
+},
+{
+"text": "Luôn cùng phương và ngược chiều với gia tốc \(\vec{a}_0\)",
+"correct": true,
+"explanation": "Tài liệu chỉ rõ: Lực quán tính luôn cùng phương ngược chiều với gia tốc \(\vec{a}_0\) của chuyển động của hệ \(O'\) đối với hệ \(O\)."
+},
+{
+"text": "Luôn vuông góc với phương của gia tốc \(\vec{a}*0\)",
+"correct": false,
+"explanation": "Lực quán tính có phương trùng với phương gia tốc tịnh tiến của hệ, không vuông góc."
+},
+{
+"text": "Có chiều ngẫu nhiên không xác định",
+"correct": false,
+"explanation": "Chiều của lực quán tính hoàn toàn xác định bằng biểu thức hình học \(\vec{F}*{qt} = -m\vec{a}_0\)."
+}
+]
+},
+{
+"id": 30,
+"question": "Hệ chất điểm trong đó khoảng cách giữa các chất điểm luôn luôn không đổi được gọi là gì?",
+"type": "single",
+"answers": [
+{
+"text": "Chất điểm cô lập",
+"correct": false,
+"explanation": "Chất điểm cô lập là một chất điểm không tương tác với các vật bên ngoài, không phải một hệ có khoảng cách cố định."
+},
+{
+"text": "Vật rắn",
+"correct": true,
+"explanation": "Theo định nghĩa trong tài liệu: Vật rắn là một hệ chất điểm trong đó khoảng cách giữa các chất điểm luôn không đổi."
+},
+{
+"text": "Mạng tinh thể thực",
+"correct": false,
+"explanation": "Mạng tinh thể thực có các sai hỏng và các nguyên tử dao động nhiệt liên tục quanh nút mạng, khoảng cách có thay đổi nhỏ, không lý tưởng tuyệt đối như định nghĩa vật rắn."
+},
+{
+"text": "Hệ quy chiếu quán tính",
+"correct": false,
+"explanation": "Hệ quy chiếu quán tính là hệ vật mốc nghiệm đúng định luật quán tính, không phải thuật ngữ mô tả cấu trúc vật thể."
+}
+]
+},
+{
+"id": 31,
+"question": "Khi vật rắn chuyển động tịnh tiến, các chất điểm của nó có đặc điểm chuyển động như thế nào?",
+"type": "single",
+"answers": [
+{
+"text": "Mỗi điểm chuyển động với vận tốc và gia tốc hoàn toàn khác nhau",
+"correct": false,
+"explanation": "Trong chuyển động tịnh tiến, các điểm bắt buộc phải có cùng vận tốc và gia tốc tại mỗi thời điểm."
+},
+{
+"text": "Mọi chất điểm chuyển động theo những quỹ đạo giống nhau và có cùng véc tơ vận tốc, véc tơ gia tốc tại mỗi thời điểm",
+"correct": true,
+"explanation": "Tài liệu khẳng định: Khi vật rắn chuyển động tịnh tiến mọi chất điểm của nó chuyển động theo những quỹ đạo giống nhau; tại mỗi thời điểm các chất điểm của vật rắn tịnh tiến đều có cùng véc tơ vận tốc và véc tơ gia tốc."
+},
+{
+"text": "Các điểm ở xa tâm sẽ chuyển động nhanh hơn các điểm ở gần tâm",
+"correct": false,
+"explanation": "Đặc điểm các điểm ở xa có vận tốc dài lớn hơn thuộc về chuyển động quay, không phải chuyển động tịnh tiến."
+},
+{
+"text": "Quỹ đạo của mọi điểm bắt buộc phải là những đường thẳng song song",
+"correct": false,
+"explanation": "Quỹ đạo giống nhau nhưng có thể là đường cong (ví dụ chuyển động của bàn đạp xe đạp), không bắt buộc phải là đường thẳng."
+}
+]
+},
+{
+"id": 32,
+"question": "Khi một vật rắn chuyển động quay xung quanh một trục cố định, các điểm của vật rắn có thuộc tính nào chung?",
+"type": "single",
+"answers": [
+{
+"text": "Có cùng bán kính quỹ đạo tròn \(r\)",
+"correct": false,
+"explanation": "Các điểm khác nhau ở khoảng cách khác nhau tới trục quay nên có bán kính \(r\) khác nhau."
+},
+{
+"text": "Trong cùng một khoảng thời gian, bán kính của mọi điểm đều quay được một góc như nhau",
+"correct": true,
+"explanation": "Tài liệu nêu rõ đặc điểm chuyển động quay: Trong cùng một khoảng thời gian \(\Delta t\), bán kính của mọi điểm của vật rắn đều quay được một góc như nhau."
+},
+{
+"text": "Có cùng độ lớn vận tốc dài \(v\)",
+"correct": false,
+"explanation": "Vận tốc dài \(v = r\omega\), vì \(r\) khác nhau nên vận tốc dài của các điểm nói chung là khác nhau."
+},
+{
+"text": "Mọi điểm đều chuyển động trên cùng một đường tròn quỹ đạo",
+"correct": false,
+"explanation": "Các điểm nằm trên các đường tròn đồng trục khác nhau, không chung một đường tròn."
+}
+]
+},
+{
+"id": 33,
+"question": "Dạng vật chất đặc biệt bao quanh các điện tích và tác dụng lực điện lên các điện tích khác đặt trong nó được gọi là gì?",
+"type": "single",
+"answers": [
+{
+"text": "Từ trường",
+"correct": false,
+"explanation": "Từ trường là dạng vật chất bao quanh các dòng điện hoặc hạt mang điện chuyển động, không phải bao quanh điện tích đứng yên làm đặc điểm cơ bản."
+},
+{
+"text": "Điện trường",
+"correct": true,
+"explanation": "Tài liệu định nghĩa: Điện trường là một dạng tồn tại của vật chất bao quanh các điện tích. Đặc điểm cơ bản của điện trường là tác dụng lực lên các điện tích đặt trong nó."
+},
+{
+"text": "Trường thế",
+"correct": false,
+"explanation": "Trường thế là tên gọi chung cho các trường lực có công không phụ thuộc hình dạng đường đi, bao gồm cả trọng trường, không riêng gì đặc trưng cho điện tích."
+},
+{
+"text": "Mạng tinh thể",
+"correct": false,
+"explanation": "Mạng tinh thể là cấu trúc sắp xếp tuần hoàn của các hạt trong chất rắn, không phải dạng trường lực bao quanh điện tích."
+}
+]
+},
+{
+"id": 34,
+"question": "Véctơ cường độ điện trường \(\vec{E}\) có chiều liên hệ như thế nào với điện thế \(V\)?",
+"type": "single",
+"answers": [
+{
+"text": "Luôn hướng theo chiều tăng của điện thế",
+"correct": false,
+"explanation": "Véctơ cường độ điện trường luôn hướng theo chiều điện thế giảm, không phải chiều tăng."
+},
+{
+"text": "Luôn hướng theo chiều giảm của điện thế",
+"correct": true,
+"explanation": "Tài liệu khẳng định rõ ràng: Véctơ cường độ điện trường luôn luôn hướng theo chiều giảm của điện thế."
+},
+{
+"text": "Luôn vuông góc với chiều thay đổi của điện thế",
+"correct": false,
+"explanation": "Cường độ điện trường hướng dọc theo đường sức, trùng phương với độ giảm điện thế mạnh nhất, không vuông góc."
+},
+{
+"text": "Không phụ thuộc vào sự biến thiên của điện thế",
+"correct": false,
+"explanation": "Cường độ điện trường liên hệ mật thiết với điện thế qua biểu thức vi phân mô tả độ giảm điện thế trên một đơn vị chiều dài."
+}
+]
+},
+{
+"id": 35,
+"question": "Những vật trong đó các điện tích có thể chuyển động tự do trong toàn bộ thể tích của vật được gọi là gì?",
+"type": "single",
+"answers": [
+{
+"text": "Vật cách điện",
+"correct": false,
+"explanation": "Vật cách điện (điện môi) không chứa các điện tích tự do dịch chuyển dễ dàng trong toàn bộ thể tích."
+},
+{
+"text": "Vật dẫn",
+"correct": true,
+"explanation": "Theo tài liệu: Vật dẫn là những vật trong đó các điện tích có thể chuyển động tự do trong toàn bộ thể tích của vật."
+},
+{
+"text": "Vật rắn lý tưởng",
+"correct": false,
+"explanation": "Vật rắn lý tưởng định nghĩa dựa trên tính không đổi của khoảng cách giữa các hạt, không dựa trên tính tự do của điện tích."
+},
+{
+"text": "Điện môi parafin",
+"correct": false,
+"explanation": "Parafin là chất cách điện (điện môi), các điện tích bị liên kết chặt chẽ."
+}
+]
+},
+{
+"id": 36,
+"question": "Đối với chất rắn kim loại, các điện tích tự do đóng vai trò dẫn điện chính là loại hạt nào?",
+"type": "single",
+"answers": [
+{
+"text": "Các ion dương nút mạng",
+"correct": false,
+"explanation": "Các ion dương nằm cố định tại các nút mạng tinh thể, không chuyển động tự do để tải điện."
+},
+{
+"text": "Các electron hóa trị liên kết yếu bứt khỏi nguyên tử (electron tự do)",
+"correct": true,
+"explanation": "Tài liệu ghi rõ: Đối với kim loại, các điện tích tự do chính là các electron hóa trị liên kết yếu với hạt nhân nên dễ dàng bứt khỏi nguyên tử để trở thành các electron tự do."
+},
+{
+"text": "Các phôtôn hạt ánh sáng",
+"correct": false,
+"explanation": "Phôtôn là hạt ánh sáng truyền năng lượng bức xạ, không phải hạt mang điện tự do trong kim loại."
+},
+{
+"text": "Các hạt prôtôn mang điện dương",
+"correct": false,
+"explanation": "Prôtôn nằm chặt trong hạt nhân nguyên tử, không thể di chuyển tự do trong cấu trúc kim loại thông thường."
+}
+]
+},
+{
+"id": 37,
+"question": "Dòng điện tạo ra trong không gian bao quanh nó một dạng vật chất đặc biệt gọi là gì, giúp truyền từ lực đến dòng điện khác?",
+"type": "single",
+"answers": [
+{
+"text": "Điện trường tĩnh",
+"correct": false,
+"explanation": "Điện trường tĩnh bao quanh các điện tích đứng yên và truyền lực điện, không phải đặc trưng chính của dòng điện ổn định truyền từ lực."
+},
+{
+"text": "Từ trường",
+"correct": true,
+"explanation": "Tài liệu xác nhận: Dòng điện tạo ra trong không gian bao quanh nó một dạng vật chất đặc biệt, gọi là từ trường. Chính thông qua từ trường mà từ lực được truyền từ dòng điện này tới dòng điện khác."
+},
+{
+"text": "Trường trọng lực",
+"correct": false,
+"explanation": "Trường trọng lực bao quanh các vật có khối lượng, truyền lực hấp dẫn chứ không truyền lực từ giữa các dòng điện."
+},
+{
+"text": "Sóng ánh sáng",
+"correct": false,
+"explanation": "Sóng ánh sáng là sóng điện từ cao tần lan truyền, không phải trường lực tĩnh/ổn định bao quanh dòng điện một chiều được mô tả trong định luật Ampe."
+}
+]
+},
+{
+"id": 38,
+"question": "Mối quan hệ nhân quả giữa hai biến cố được định nghĩa như thế nào trong thuyết tương đối?",
+"type": "single",
+"answers": [
+{
+"text": "Kết quả xảy ra trước, nguyên nhân xảy ra sau",
+"correct": false,
+"explanation": "Phát biểu này đảo ngược trật tự tự nhiên của mối quan hệ nhân quả."
+},
+{
+"text": "Nguyên nhân bao giờ cũng xảy ra trước, kết quả xảy ra sau",
+"correct": true,
+"explanation": "Tài liệu nêu rõ: Mối quan hệ nhân quả là mối quan hệ có nguyên nhân và kết quả. Nguyên nhân bao giờ cũng xảy ra trước, kết quả xảy ra sau."
+},
+{
+"text": "Hai biến cố phải xảy ra hoàn toàn đồng thời ở mọi hệ quy chiếu",
+"correct": false,
+"explanation": "Hai biến cố nhân quả có khoảng cách thời gian rõ rệt giữa nguyên nhân và kết quả, không đồng thời."
+},
+{
+"text": "Thứ tự thời gian giữa chúng có thể bị đảo ngược tùy thuộc vào vận tốc hệ quy chiếu",
+"correct": false,
+"explanation": "Tài liệu khẳng định: Thứ tự của các biến cố có quan hệ nhân quả bao giờ cũng được đảm bảo (không bị đảo lộn) trong mọi hệ qui chiếu quán tính."
+}
+]
+},
+{
+"id": 39,
+"question": "Loại liên kết nào bền vững nhất trong các loại liên kết mạng tinh thể của vật rắn được nêu trong tài liệu?",
+"type": "single",
+"answers": [
+{
+"text": "Liên kết phân tử (Van de Waal)",
+"correct": false,
+"explanation": "Liên kết phân tử là loại liên kết yếu nhất, xuất hiện do sự bất đối xứng điện đạo giữa các phân tử."
+},
+{
+"text": "Liên kết nguyên tử (đồng hóa trị)",
+"correct": true,
+"explanation": "Tài liệu khẳng định rõ ràng: Liên kết nguyên tử là loại liên kết bền vững nhất. Các nguyên tử liên kết với nhau bằng lực trao đổi nhờ các cặp electron có spin đối song."
+},
+{
+"text": "Liên kết ion",
+"correct": false,
+"explanation": "Liên kết ion tạo bởi lực hút tĩnh điện giữa các ion trái dấu, rất chắc chắn nhưng không được xếp là bền vững nhất so với liên kết nguyên tử trong tài liệu."
+},
+{
+"text": "Liên kết kim loại",
+"correct": false,
+"explanation": "Liên kết kim loại tạo bởi các electron hóa trị bị tập thể hóa đóng vai trò liên kết ion dương, không phải loại bền vững nhất."
+}
+]
+},
+{
+"id": 40,
+"question": "Loại liên kết nào được đánh giá là yếu nhất trong các loại liên kết của vật rắn tinh thể?",
+"type": "single",
+"answers": [
+{
+"text": "Liên kết nguyên tử",
+"correct": false,
+"explanation": "Liên kết nguyên tử là loại liên kết bền vững nhất, không phải yếu nhất."
+},
+{
+"text": "Liên kết phân tử",
+"correct": true,
+"explanation": "Giáo trình nêu rõ: Ở các nút mạng là phân tử, các phân tử liên kết với nhau bởi lực tương tác phân tử yếu gọi là lực Van de Waal... Đây là loại liên kết yếu nhất trong các loại liên kết của vật rắn tinh thể."
+},
+{
+"text": "Liên kết kim loại",
+"correct": false,
+"explanation": "Liên kết kim loại dựa trên đám mây electron tự do giữ các ion dương nút mạng, có độ bền cơ học cao hơn liên kết phân tử yếu."
+},
+{
+"text": "Liên kết ion",
+"correct": false,
+"explanation": "Liên kết ion dựa trên lực hút Coulomb mạnh mẽ giữa các ion trái dấu nên tương đối bền vững, không phải yếu nhất."
+}
+]
+}
+]
+}
