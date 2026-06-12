@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSON Quiz Prompt Builder</title>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+    :root {
+      --bg: #f7f3ea;
+      --text: #172033;
+      --muted: #667085;
+      --border: #e7e5df;
+      --surface: rgba(255, 255, 255, 0.88);
+      --surface-solid: #ffffff;
+      --primary: #2563eb;
+      --primary-soft: #eaf2ff;
+      --green: #16a34a;
+      --green-soft: #ecfdf3;
+      --danger: #ef4444;
+      --shadow: 0 24px 70px rgba(23, 32, 51, 0.12);
+      --shadow-soft: 0 12px 34px rgba(23, 32, 51, 0.08);
+      --radius-xl: 30px;
+      --radius-lg: 22px;
+      --radius-md: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .page-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.16), transparent 30rem),
+        radial-gradient(circle at 85% 12%, rgba(124, 58, 237, 0.12), transparent 28rem),
+        radial-gradient(circle at 80% 92%, rgba(22, 163, 74, 0.12), transparent 30rem),
+        linear-gradient(180deg, #f9fbff 0%, #f7f3ea 100%);
+    }
+
+    .app {
+      width: min(1380px, 100%);
+      margin: 0 auto;
+      padding: 28px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      margin: 12px 0 8px;
+      font-size: clamp(34px, 5vw, 64px);
+      line-height: 0.98;
+      letter-spacing: -0.07em;
+    }
+
+    .hero p {
+      max-width: 760px;
+      color: var(--muted);
+      line-height: 1.7;
+      margin: 0;
+      font-size: 17px;
+    }
+
+    .hero-card {
+      min-width: 260px;
+      border-radius: var(--radius-xl);
+      padding: 22px;
+      background: linear-gradient(145deg, #2563eb, #7c3aed);
+      color: white;
+      box-shadow: var(--shadow);
+      display: grid;
+      align-content: center;
+    }
+
+    .hero-card strong {
+      font-size: 24px;
+    }
+
+    .hero-card span {
+      opacity: 0.84;
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      padding: 7px 11px;
+      border-radius: 999px;
+      color: var(--primary);
+      background: var(--primary-soft);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
+      gap: 20px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--surface);
+      border: 1px solid rgba(231, 229, 223, 0.92);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-soft);
+      backdrop-filter: blur(18px);
+      padding: 22px;
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .panel h2 {
+      margin: 10px 0 0;
+      letter-spacing: -0.04em;
+      font-size: 26px;
+    }
+
+    .form-panel {
+      display: grid;
+      gap: 16px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 0.8fr 1fr 1.3fr;
+      gap: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 8px;
+    }
+
+    label span {
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      background: var(--surface-solid);
+      color: var(--text);
+      padding: 13px 14px;
+      outline: none;
+      font: inherit;
+      transition: 0.18s ease;
+    }
+
+    input,
+    select {
+      min-height: 48px;
+    }
+
+    textarea {
+      resize: vertical;
+      line-height: 1.6;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #93c5fd;
+      box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .btn {
+      min-height: 46px;
+      padding: 0 18px;
+      border: 0;
+      border-radius: 15px;
+      cursor: pointer;
+      font-weight: 900;
+      transition: 0.18s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      color: white;
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      box-shadow: 0 14px 28px rgba(37, 99, 235, 0.22);
+    }
+
+    .btn-success {
+      color: white;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      box-shadow: 0 14px 28px rgba(22, 163, 74, 0.18);
+    }
+
+    .btn-light {
+      background: white;
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .preview-panel {
+      position: sticky;
+      top: 24px;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 10px;
+      border-radius: 999px;
+      color: var(--muted);
+      background: #f2f4f7;
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .status.success {
+      color: #067647;
+      background: var(--green-soft);
+    }
+
+    .status.error {
+      color: #b42318;
+      background: #fff1f1;
+    }
+
+    #promptOutput {
+      min-height: 650px;
+      font-family: "Consolas", "Monaco", monospace;
+      font-size: 14px;
+      background: #101828;
+      color: #e4e7ec;
+      border-color: #1d2939;
+    }
+
+    .tips {
+      margin-top: 16px;
+      padding: 16px;
+      border-radius: var(--radius-lg);
+      background: #fff8ed;
+      border: 1px solid #fed7aa;
+    }
+
+    .tips h3 {
+      margin: 0 0 10px;
+    }
+
+    .tips ol {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    @media (max-width: 1080px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .preview-panel {
+        position: static;
+      }
+
+      #promptOutput {
+        min-height: 520px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .app {
+        padding: 16px;
+      }
+
+      .hero {
+        flex-direction: column;
+      }
+
+      .hero-card {
+        min-width: 0;
+      }
+
+      .panel {
+        padding: 18px;
+        border-radius: 22px;
+      }
+
+      .panel-header {
+        flex-direction: column;
+      }
+
+      .grid-2,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-bg"></div>
+
+  <main class="app">
+    <section class="hero">
+      <div>
+        <span class="badge">Prompt Builder</span>
+        <h1>JSON Quiz Prompt Builder</h1>
+        <p>
+          Điền thông tin bài học, yêu cầu tạo câu hỏi và copy prompt hoàn chỉnh để đưa cho AI tạo file JSON trắc nghiệm.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <strong>Đầu ra</strong>
+        <span>Prompt tạo JSON theo cấu trúc website trắc nghiệm</span>
+      </div>
+    </section>
+
+    <section class="layout">
+      <form class="panel form-panel" id="promptForm">
+        <div class="panel-header">
+          <div>
+            <span class="badge">Thông tin cần điền</span>
+            <h2>Cấu hình đề kiểm tra</h2>
+          </div>
+          <button type="button" class="btn btn-light" id="resetBtn">Làm mới</button>
+        </div>
+
+        <div class="grid-2">
+          <label>
+            <span>Ngành học</span>
+            <input id="major" type="text" placeholder="Ví dụ: Công nghệ thông tin" />
+          </label>
+
+          <label>
+            <span>Kì học</span>
+            <input id="semester" type="text" placeholder="Ví dụ: Kì 1" />
+          </label>
+
+          <label>
+            <span>Môn học</span>
+            <input id="subject" type="text" placeholder="Ví dụ: Nhập môn lập trình" />
+          </label>
+
+          <label>
+            <span>Tên bài</span>
+            <input id="lessonName" type="text" placeholder="Ví dụ: Bài 1: Tổng quan lập trình" />
+          </label>
+        </div>
+
+        <label>
+          <span>Tiêu đề đề kiểm tra</span>
+          <input id="title" type="text" placeholder="Ví dụ: CNTT - Kì 1 - Nhập môn lập trình" />
+        </label>
+
+        <label>
+          <span>Mô tả ngắn</span>
+          <textarea id="description" rows="3" placeholder="Ví dụ: Các khái niệm nền tảng về chương trình, biến, thuật toán và độ phức tạp."></textarea>
+        </label>
+
+        <div class="grid-3">
+          <label>
+            <span>Số lượng câu</span>
+            <input id="questionCount" type="number" min="1" max="200" placeholder="Ví dụ: 20" />
+          </label>
+
+          <label>
+            <span>Mức độ</span>
+            <select id="difficulty">
+              <option value="TRỘN MỨC ĐỘ">Trộn mức độ</option>
+              <option value="DỄ">Dễ</option>
+              <option value="TRUNG BÌNH">Trung bình</option>
+              <option value="KHÓ">Khó</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Tỉ lệ dạng câu</span>
+            <select id="questionTypes">
+              <option value="Ưu tiên single và multiple, có thể thêm input nếu phù hợp.">Single + multiple + input nếu phù hợp</option>
+              <option value="Chỉ tạo câu hỏi single.">Chỉ single</option>
+              <option value="Tạo kết hợp single và multiple.">Single + multiple</option>
+              <option value="Tạo kết hợp single, multiple và input.">Single + multiple + input</option>
+              <option value="Ưu tiên câu hỏi input cho phần tính toán/lập trình.">Ưu tiên input</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          <span>Yêu cầu thêm của người dùng</span>
+          <textarea id="extraRequirements" rows="5" placeholder="Ví dụ: Tạo câu hỏi bám sát slide, tránh câu hỏi mẹo, thêm câu vận dụng code C++..."></textarea>
+        </label>
+
+        <label>
+          <span>Ghi chú về tài liệu gửi cho AI</span>
+          <textarea id="documentNote" rows="4" placeholder="Ví dụ: Tài liệu gồm slide chương 1 và chương 2. Chỉ tạo câu hỏi từ nội dung trong tài liệu."></textarea>
+        </label>
+
+        <div class="actions">
+          <button type="button" class="btn btn-primary" id="generateBtn">Tạo prompt</button>
+          <button type="button" class="btn btn-success" id="copyBtn">Copy prompt</button>
+        </div>
+      </form>
+
+      <section class="panel preview-panel">
+        <div class="panel-header">
+          <div>
+            <span class="badge">Prompt đầu ra</span>
+            <h2>Xem trước prompt</h2>
+          </div>
+          <span class="status" id="copyStatus">Chưa copy</span>
+        </div>
+
+        <textarea id="promptOutput" spellcheck="false"></textarea>
+
+        <div class="tips">
+          <h3>Cách dùng</h3>
+          <ol>
+            <li>Điền đầy đủ thông tin đề kiểm tra.</li>
+            <li>Bấm <strong>Tạo prompt</strong>.</li>
+            <li>Bấm <strong>Copy prompt</strong>.</li>
+            <li>Gửi prompt kèm tài liệu cho AI để tạo file JSON.</li>
+          </ol>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const fields = {
+      major: document.querySelector("#major"),
+      semester: document.querySelector("#semester"),
+      subject: document.querySelector("#subject"),
+      lessonName: document.querySelector("#lessonName"),
+      title: document.querySelector("#title"),
+      description: document.querySelector("#description"),
+      questionCount: document.querySelector("#questionCount"),
+      difficulty: document.querySelector("#difficulty"),
+      questionTypes: document.querySelector("#questionTypes"),
+      extraRequirements: document.querySelector("#extraRequirements"),
+      documentNote: document.querySelector("#documentNote")
+    };
+
+    const promptOutput = document.querySelector("#promptOutput");
+    const copyStatus = document.querySelector("#copyStatus");
+    const generateBtn = document.querySelector("#generateBtn");
+    const copyBtn = document.querySelector("#copyBtn");
+    const resetBtn = document.querySelector("#resetBtn");
+
+    const STORAGE_KEY = "json_quiz_prompt_builder_form";
+
+    function valueOf(fieldName, fallback = "") {
+      const value = fields[fieldName].value.trim();
+      return value || fallback;
+    }
+
+    function escapeForPrompt(value) {
+      return String(value)
+        .replaceAll("\\", "\\\\")
+        .replaceAll('"', '\\"');
+    }
+
+    function buildPrompt() {
+      const major = valueOf("major", "[NGÀNH HỌC]");
+      const semester = valueOf("semester", "[KÌ HỌC]");
+      const subject = valueOf("subject", "[MÔN HỌC]");
+      const lessonName = valueOf("lessonName", "[TÊN BÀI]");
+      const title = valueOf("title", "[TIÊU ĐỀ ĐỀ KIỂM TRA]");
+      const description = valueOf("description", "[MÔ TẢ NGẮN]");
+      const questionCount = valueOf("questionCount", "[SỐ LƯỢNG CÂU]");
+      const difficulty = valueOf("difficulty", "TRỘN MỨC ĐỘ");
+      const questionTypes = valueOf("questionTypes", "Ưu tiên single và multiple, có thể thêm input nếu phù hợp.");
+      const extraRequirements = valueOf("extraRequirements", "Không có yêu cầu thêm.");
+      const documentNote = valueOf("documentNote", "Chỉ sử dụng nội dung có trong tài liệu người dùng gửi.");
+
+      const jsonTitle = escapeForPrompt(title);
+      const jsonLessonName = escapeForPrompt(lessonName);
+      const jsonDescription = escapeForPrompt(description);
+      const jsonMajor = escapeForPrompt(major);
+      const jsonSemester = escapeForPrompt(semester);
+      const jsonSubject = escapeForPrompt(subject);
+
+      return `Bạn là một AI chuyên tạo dữ liệu câu hỏi trắc nghiệm từ tài liệu học tập.
+
+Nhiệm vụ của bạn là đọc toàn bộ tài liệu người dùng cung cấp, sau đó tạo ra một file JSON dùng cho website làm bài trắc nghiệm.
+
+Ghi chú về tài liệu:
+${documentNote}
+
+Yêu cầu quan trọng:
+
+1. Nếu có thê tạo file JSON thì chỉ tạo file, không giải thích thêm; nếu không chỉ xuất ra JSON hợp lệ, không giải thích thêm, không dùng Markdown, không bọc trong \`\`\`json.
+
+2. JSON phải đúng cấu trúc sau:
+
+{
+  "title": "${jsonTitle}",
+  "lessonName": "${jsonLessonName}",
+  "description": "${jsonDescription}",
+  "major": "${jsonMajor}",
+  "semester": "${jsonSemester}",
+  "subject": "${jsonSubject}",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Nội dung câu hỏi",
+      "type": "single",
+      "answers": [
+        {
+          "text": "Nội dung đáp án",
+          "correct": true,
+          "explanation": "Giải thích vì sao đáp án này đúng hoặc sai"
+        }
+      ]
+    }
+  ]
+}
+
+3. Metadata cần dùng:
+- major: ${major}
+- semester: ${semester}
+- subject: ${subject}
+- title: ${title}
+- lessonName: ${lessonName}
+- description: ${description}
+
+4. Tạo câu hỏi theo yêu cầu:
+- Số câu hỏi: ${questionCount}
+- Mức độ: ${difficulty}
+- Ngôn ngữ câu hỏi: Tiếng Việt
+- Dạng câu hỏi: ${questionTypes}
+
+5. Hỗ trợ 3 loại câu hỏi:
+- "single": câu hỏi chỉ có một đáp án đúng.
+- "multiple": câu hỏi có nhiều đáp án đúng.
+- "input": câu hỏi nhập đáp án trực tiếp.
+
+6. Với câu hỏi "single":
+- Có ít nhất 4 đáp án.
+- Chỉ có đúng 1 đáp án có "correct": true.
+- Các đáp án sai phải hợp lý, không quá vô lý.
+
+7. Với câu hỏi "multiple":
+- Có ít nhất 4 đáp án.
+- Có từ 2 đáp án đúng trở lên.
+- Mỗi đáp án đều phải có giải thích rõ vì sao đúng hoặc sai.
+
+8. Với câu hỏi "input":
+- Trường "answers" chỉ cần chứa một hoặc một vài đáp án đúng được chấp nhận.
+- Mỗi đáp án đúng có "correct": true.
+- Phần "explanation" phải trình bày cách suy luận hoặc cách tính ra đáp án.
+
+9. Mỗi câu hỏi phải có:
+- id tăng dần từ 1.
+- question rõ ràng, không mơ hồ.
+- type đúng một trong các giá trị: "single", "multiple", "input".
+- answers là một mảng.
+- Mỗi answer có đủ: text, correct, explanation.
+
+10. Phần explanation:
+- Không được chỉ viết “Đúng” hoặc “Sai”.
+- Phải giải thích ngắn gọn, dễ hiểu.
+- Nếu đáp án sai, cần nói rõ sai ở đâu.
+- Nếu đáp án đúng, cần nói rõ vì sao đúng.
+
+11. Nội dung câu hỏi:
+- Phải bám sát tài liệu người dùng cung cấp.
+- Không tự bịa kiến thức ngoài tài liệu nếu tài liệu không nhắc đến.
+- Có thể diễn đạt lại kiến thức để tạo câu hỏi, nhưng không được làm sai ý gốc.
+- Ưu tiên các ý quan trọng, khái niệm, định nghĩa, ví dụ, công thức, quy trình, so sánh và lỗi thường gặp.
+
+12. Nếu tài liệu không đủ thông tin để tạo đủ số câu hỏi:
+- Vẫn tạo số câu tốt nhất có thể dựa trên tài liệu.
+- Không bịa nội dung.
+- Có thể tạo câu hỏi ở mức nhận biết, thông hiểu và vận dụng đơn giản dựa trên nội dung có sẵn.
+
+13. Yêu cầu thêm của người dùng:
+${extraRequirements}
+
+14. Trước khi xuất JSON, hãy tự kiểm tra:
+- JSON parse được.
+- Không có comment trong JSON.
+- Không có dấu phẩy thừa.
+- Tất cả chuỗi đều dùng dấu nháy kép.
+- Mỗi câu "single" chỉ có 1 đáp án đúng.
+- Mỗi câu "multiple" có ít nhất 2 đáp án đúng.
+- Mỗi câu có explanation cho mọi đáp án.
+- Không có nội dung nằm ngoài object JSON.
+
+Bây giờ hãy đọc tài liệu người dùng cung cấp và tạo JSON hoàn chỉnh theo đúng cấu trúc trên. (Nếu có công thức toán học dùng MathJax: hiển thị công thức toán học viết bằng LaTeX trong JSON. Dùng \\(...\\) cho công thức inline và \\[...\\] cho công thức xuống dòng.)`;
+    }
+
+    function updatePrompt() {
+      promptOutput.value = buildPrompt();
+      saveForm();
+      setStatus("Đã cập nhật", "success");
+    }
+
+    async function copyPrompt() {
+      const text = promptOutput.value.trim() || buildPrompt();
+
+      try {
+        await navigator.clipboard.writeText(text);
+        setStatus("Đã copy vào clipboard", "success");
+      } catch {
+        promptOutput.value = text;
+        promptOutput.select();
+        document.execCommand("copy");
+        setStatus("Đã copy bằng chế độ dự phòng", "success");
+      }
+    }
+
+    function setStatus(message, type = "") {
+      copyStatus.textContent = message;
+      copyStatus.className = `status ${type}`.trim();
+    }
+
+    function saveForm() {
+      const data = {};
+      Object.entries(fields).forEach(([key, element]) => {
+        data[key] = element.value;
+      });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }
+
+    function loadForm() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (!raw) return;
+
+        const data = JSON.parse(raw);
+        Object.entries(data).forEach(([key, value]) => {
+          if (fields[key]) fields[key].value = value;
+        });
+      } catch {
+        localStorage.removeItem(STORAGE_KEY);
+      }
+    }
+
+    function resetForm() {
+      Object.values(fields).forEach((element) => {
+        if (element.tagName === "SELECT") {
+          element.selectedIndex = 0;
+        } else {
+          element.value = "";
+        }
+      });
+
+      localStorage.removeItem(STORAGE_KEY);
+      updatePrompt();
+      setStatus("Đã làm mới", "success");
+    }
+
+    Object.values(fields).forEach((element) => {
+      element.addEventListener("input", updatePrompt);
+      element.addEventListener("change", updatePrompt);
+    });
+
+    generateBtn.addEventListener("click", updatePrompt);
+    copyBtn.addEventListener("click", copyPrompt);
+    resetBtn.addEventListener("click", resetForm);
+
+    loadForm();
+    updatePrompt();
+    setStatus("Sẵn sàng", "");
+  </script>
+</body>
+</html>
