@@ -5,7 +5,7 @@
     "semester",
     "subject"
   ],
-  "updatedAt": "2026-06-11T15:44:35.174500+00:00",
+  "updatedAt": "2026-06-12T16:28:20.177568+00:00",
   "quizzes": [
     {
       "id": "cong-nghe-thong-tin-ki-2-giai-tich-de-mau",
@@ -16,6 +16,17 @@
       "lessonName": "Đề mẫu",
       "description": "Đề mẫu giải tích 2",
       "path": "./Json/CNTT/Ki_2/GT2.json",
+      "questionCount": 40
+    },
+    {
+      "id": "cong-nghe-thong-tin-ki-2-vat-ly-ung-dung-de-mau",
+      "major": "Công nghệ thông tin",
+      "semester": "Kì 2",
+      "subject": "Vật lý ứng dụng",
+      "title": "Bài kiểm tra 1",
+      "lessonName": "Đề mẫu",
+      "description": "Bài kiểm tra 1",
+      "path": "./Json/CNTT/Ki_2/VLUD.json",
       "questionCount": 40
     }
   ]
